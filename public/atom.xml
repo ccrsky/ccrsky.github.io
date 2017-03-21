@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ccrsky</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://ccrsky.github.io/"/>
+  <updated>2017-03-21T05:42:18.000Z</updated>
+  <id>http://ccrsky.github.io/</id>
+  
+  <author>
+    <name>ccrsky</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tmux</title>
+    <link href="http://ccrsky.github.io/2017/03/21/tmux/"/>
+    <id>http://ccrsky.github.io/2017/03/21/tmux/</id>
+    <published>2017-03-21T04:34:33.000Z</published>
+    <updated>2017-03-21T05:42:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上篇讲到了 &lt;a href=&quot;http://www.jianshu.com/p/3436bcb17a03&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;iTerm2的基本使用&lt;/a&gt; ，iTerm2能够让我们迅速从不同的窗口中切换。通过 iTerm2 ，我
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="http://ccrsky.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+</feed>
