@@ -36,11 +36,11 @@
   </entry>
   
   <entry>
-    <title>tmux</title>
-    <link href="https://ccrsky.github.io/2017/03/21/tmux/"/>
-    <id>https://ccrsky.github.io/2017/03/21/tmux/</id>
+    <title>tmux使用</title>
+    <link href="https://ccrsky.github.io/2017/03/21/tmux%E4%BD%BF%E7%94%A8/"/>
+    <id>https://ccrsky.github.io/2017/03/21/tmux使用/</id>
     <published>2017-03-21T04:34:33.000Z</published>
-    <updated>2017-03-21T06:26:39.000Z</updated>
+    <updated>2017-04-17T18:00:38.000Z</updated>
     
     <summary type="html">
     
@@ -48,17 +48,19 @@
     
     </summary>
     
+      <category term="linux" scheme="https://ccrsky.github.io/categories/linux/"/>
+    
     
       <category term="工具" scheme="https://ccrsky.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
-    <title>fabric</title>
-    <link href="https://ccrsky.github.io/2016/02/14/fabric/"/>
-    <id>https://ccrsky.github.io/2016/02/14/fabric/</id>
+    <title>fabric快速入门</title>
+    <link href="https://ccrsky.github.io/2016/02/14/fabric%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    <id>https://ccrsky.github.io/2016/02/14/fabric快速入门/</id>
     <published>2016-02-14T05:07:01.000Z</published>
-    <updated>2017-04-17T17:11:21.000Z</updated>
+    <updated>2017-04-17T17:58:02.000Z</updated>
     
     <summary type="html">
     

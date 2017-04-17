@@ -1,5 +1,5 @@
 ---
-title: fabric
+title: fabric快速入门
 date: 2016-02-14 13:07:01
 tags:
     - python
