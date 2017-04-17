@@ -7,7 +7,6 @@ tags:
 category: 
     - js
 ---
-###javacript 对象
 
 #### 创建对象
 
