@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="linux," />
+  <meta name="keywords" content="python,运维," />
 
 
 
@@ -89,28 +89,43 @@
 
 
 
-<meta name="description" content="Linux进程与资源管理Linux最棒的地方在于它的多用户多任务环境，记录下多用户多任务相关的几个常用命令。
-前后台进程及切换有时候我们并不一定要在屏幕前工作，这时就需要使用到背景工作管理的一些指令，如 &amp;amp;，ctrl+z。
-如果想让程序在背景下执行，可以使用 &amp;amp;,由于是背景，该程序的输入并不会显示在屏幕上。
-语法格式: command &amp;amp;
-12345# 程序进入背景执行fi">
+<meta name="description" content="Fabric是一个Python库，用于简化使用SSH的应用程序部署或系统管理任务。
+它提供的操作包括：执行本地或远程shell命令，上传/下载文件，以及其他辅助功能等。
+安装☞点我传送到fabric官网
+安装fabric库
+1pip install fabric
+
+依赖 Paramiko 、PyCrypto库
+
+安装依赖
+12345# 安装 pycrypto 密码库pip install pycr">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux进程资源信息">
-<meta property="og:url" content="https://ccrsky.github.io/2017/04/17/linux进程资源信息/index.html">
+<meta property="og:title" content="fabric">
+<meta property="og:url" content="https://ccrsky.github.io/2016/02/14/fabric/index.html">
 <meta property="og:site_name" content="ccrsky">
-<meta property="og:description" content="Linux进程与资源管理Linux最棒的地方在于它的多用户多任务环境，记录下多用户多任务相关的几个常用命令。
-前后台进程及切换有时候我们并不一定要在屏幕前工作，这时就需要使用到背景工作管理的一些指令，如 &amp;amp;，ctrl+z。
-如果想让程序在背景下执行，可以使用 &amp;amp;,由于是背景，该程序的输入并不会显示在屏幕上。
-语法格式: command &amp;amp;
-12345# 程序进入背景执行fi">
-<meta property="og:updated_time" content="2017-04-17T17:12:07.000Z">
+<meta property="og:description" content="Fabric是一个Python库，用于简化使用SSH的应用程序部署或系统管理任务。
+它提供的操作包括：执行本地或远程shell命令，上传/下载文件，以及其他辅助功能等。
+安装☞点我传送到fabric官网
+安装fabric库
+1pip install fabric
+
+依赖 Paramiko 、PyCrypto库
+
+安装依赖
+12345# 安装 pycrypto 密码库pip install pycr">
+<meta property="og:updated_time" content="2017-04-17T17:11:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux进程资源信息">
-<meta name="twitter:description" content="Linux进程与资源管理Linux最棒的地方在于它的多用户多任务环境，记录下多用户多任务相关的几个常用命令。
-前后台进程及切换有时候我们并不一定要在屏幕前工作，这时就需要使用到背景工作管理的一些指令，如 &amp;amp;，ctrl+z。
-如果想让程序在背景下执行，可以使用 &amp;amp;,由于是背景，该程序的输入并不会显示在屏幕上。
-语法格式: command &amp;amp;
-12345# 程序进入背景执行fi">
+<meta name="twitter:title" content="fabric">
+<meta name="twitter:description" content="Fabric是一个Python库，用于简化使用SSH的应用程序部署或系统管理任务。
+它提供的操作包括：执行本地或远程shell命令，上传/下载文件，以及其他辅助功能等。
+安装☞点我传送到fabric官网
+安装fabric库
+1pip install fabric
+
+依赖 Paramiko 、PyCrypto库
+
+安装依赖
+12345# 安装 pycrypto 密码库pip install pycr">
 
 
 
@@ -138,13 +153,13 @@
 
 
 
-  <link rel="canonical" href="https://ccrsky.github.io/2017/04/17/linux进程资源信息/"/>
+  <link rel="canonical" href="https://ccrsky.github.io/2016/02/14/fabric/"/>
 
 
 
 
 
-  <title> linux进程资源信息 | ccrsky </title>
+  <title> fabric | ccrsky </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -283,7 +298,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/04/17/linux进程资源信息/">
+    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2016/02/14/fabric/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ccrsky">
@@ -304,7 +319,7 @@
             
             
               
-                linux进程资源信息
+                fabric
               
             
           </h1>
@@ -319,8 +334,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-17T01:24:36+08:00">
-                2017-04-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-02-14T13:07:01+08:00">
+                2016-02-14
               </time>
             
 
@@ -342,8 +357,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
                   </a>
                 </span>
 
@@ -360,8 +375,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/04/17/linux进程资源信息/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/17/linux进程资源信息/" itemprop="commentCount"></span>
+                <a href="/2016/02/14/fabric/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/14/fabric/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -387,44 +402,38 @@
       
 
       
-        <h2 id="Linux进程与资源管理"><a href="#Linux进程与资源管理" class="headerlink" title="Linux进程与资源管理"></a>Linux进程与资源管理</h2><p>Linux最棒的地方在于它的多用户多任务环境，记录下多用户多任务相关的几个常用命令。</p>
-<h3 id="前后台进程及切换"><a href="#前后台进程及切换" class="headerlink" title="前后台进程及切换"></a>前后台进程及切换</h3><p>有时候我们并不一定要在屏幕前工作，这时就需要使用到背景工作管理的一些指令，如 <code>&amp;</code>，<code>ctrl+z</code>。</p>
-<p>如果想让程序在背景下执行，可以使用 <code>&amp;</code>,由于是背景，该程序的输入并不会显示在屏幕上。</p>
-<p>语法格式: <code>command &amp;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 程序进入背景执行</div><div class="line">find / -name test &amp;</div><div class="line"></div><div class="line"># fg 将程序拉回屏幕前执行</div><div class="line">fg</div></pre></td></tr></table></figure>
-<p>也可以通过 <code>ctrl+z</code> 将正在运行的工作丢到背景下，放在背景下的最大好处就是不会被 <code>ctrl+c</code> 指令中断。</p>
-<p>如果出现某个时候需要暂时退出vim，但又不想保存退出，可 <code>ctrl+z</code> 暂时退出</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 程序进入背景执行</div><div class="line">vim a.js</div><div class="line"></div><div class="line"># 将vim放到背景中，并没有退出</div><div class="line">ctrl+z</div></pre></td></tr></table></figure>
-<p>可使用 <code>jobs</code> 可以查看任务列表，配合 <code>bg</code> ，<code>fg</code>将程序拉回屏幕。</p>
-<p>查看背景程序：<code>jobs</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 查看背景程序</div><div class="line">jobs</div><div class="line">[1]  + suspended  vim a.js</div><div class="line"></div><div class="line"># 恢复vim编辑</div><div class="line">fg %1</div></pre></td></tr></table></figure>
-<p><code>fg &amp; bg</code>恢复背景进程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#number 为jobs中方括号中的编号</div><div class="line">fg  %number</div><div class="line"></div><div class="line">#将背景程序中的程序由stopped变成running</div><div class="line">bg %number</div></pre></td></tr></table></figure>
-<p><code>kill</code> 杀掉背景程序中的程序</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">kill -signal %number</div><div class="line">signal</div><div class="line">    -1 :重新读取参数配置（类似reload）</div><div class="line">    -2 :类似Ctrl+c中断工作</div><div class="line">    -9 :强制杀掉进程</div><div class="line">    -15 :停止一个工作（默认值）</div><div class="line">    </div><div class="line">#杀掉vim 进程    </div><div class="line">kill -9 %1</div></pre></td></tr></table></figure>
-<h3 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h3><p><code>ps</code> 查看进程信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">ps -aux</div><div class="line">参数说明</div><div class="line">    a :显示所有程序</div><div class="line">    u :列出所有用户程序</div><div class="line">    x :列出所有tty程序</div><div class="line">    </div><div class="line"># 显示进程信息    </div><div class="line">ps -aux</div><div class="line"></div><div class="line">USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND</div><div class="line">nali              2557   3.0  1.2  2832304  49180   ??  S    五04下午   4:54.94 /Applications/iTerm 2.app/Contents/MacOS/iTerm2</div><div class="line">nali               920   1.6  0.8  2939412  34404   ??  S    四07下午   5:26.69 /Applications/QQ.app/Contents/MacOS/QQ   </div><div class="line"></div><div class="line">#干掉进程 </div><div class="line">kill -9 pid</div></pre></td></tr></table></figure>
-<p>另外一个显示进程的命令是 <code>top</code> 可动态显示。<br>查看内存使用：<code>free</code><br>查看系统资源：<code>sar</code></p>
-<h3 id="程序优先级"><a href="#程序优先级" class="headerlink" title="程序优先级"></a>程序优先级</h3><p>由于CPU资源有限，优先级高的程序会先获取CPU资源。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ps -l</div><div class="line"></div><div class="line">UID   PID  PPID        F CPU PRI NI       SZ    RSS WCHAN     S             ADDR TTY           TIME CMD</div><div class="line">501  9005  2557     4006   0  31  0  2507116   9148 -      Ss                  0 ttys001    0:00.07 /Applications/iTerm 2.app/Contents/MacOS/iTerm2 --server login </div><div class="line"></div><div class="line">#PRI 代表程序优先级，越小越先被执行</div><div class="line">NI 代表nice的值</div></pre></td></tr></table></figure>
-<p><em>PRI越小越优先被执行</em></p>
-<p><code>PRI(new) = PRI(old) + nice</code></p>
+        <p>Fabric是一个Python库，用于简化使用SSH的应用程序部署或系统管理任务。</p>
+<p>它提供的操作包括：执行本地或远程shell命令，上传/下载文件，以及其他辅助功能等。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><a href="http://www.fabfile.org/installing.html" target="_blank" rel="external">☞点我传送到fabric官网</a></p>
+<p>安装fabric库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install fabric</div></pre></td></tr></table></figure>
 <blockquote>
-<p>一般用户可用的nice值 0~19<br>root可用的nice值-20~19</p>
+<p>依赖 Paramiko 、PyCrypto库</p>
 </blockquote>
-<p>调整程序的的优先级<br><code>nice [-n number] command</code></p>
-<p>调整运行中程序的优先级<br><code>renice number PID</code></p>
-<h3 id="查看系统相关信息"><a href="#查看系统相关信息" class="headerlink" title="查看系统相关信息"></a>查看系统相关信息</h3><p><code>uname</code> 查看系统信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">uname </div><div class="line">参数信息：</div><div class="line">    -a :列出所有信息</div><div class="line">    -p :列出CPU信息</div><div class="line">    -r :列出核心版本信息</div><div class="line">    -n :列出版本信息</div></pre></td></tr></table></figure>
-<p><code>dmesg</code> 查看启动一闪而过的信息</p>
-<p><code>uptime</code> 显示开机时间及负载相关信息</p>
-<p><code>last</code> 显示登录信息</p>
-<p><code>hostname</code> 显示主机名</p>
-<p><code>who</code> 查看当前系统上的用户(只列出用户名及登录时间)</p>
-<p><code>w</code> 查看当前系统上的用户(列出用户名及登录时间 + 源地址IP + 工作项 + ..)</p>
-<p><code>whoami</code> 显示当前登录用户名</p>
-<p><code>ntpdate</code> 网络校时</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 校时服务器 time.stdtime.gov.tw</div><div class="line"></div><div class="line"># 执行校时命令</div><div class="line">ntpdate time.stdtime.gov.tw</div><div class="line"></div><div class="line"># 可配合crontab定时校时</div></pre></td></tr></table></figure>
+<p>安装依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 安装 pycrypto 密码库</div><div class="line">pip install pycrypto</div><div class="line"></div><div class="line"># 安装 pycrypto 依赖</div><div class="line">pip install ecdsa</div></pre></td></tr></table></figure>
+<p>ps:【windows7 x64 ，python2.7 】Windows下pip安装包报错：Microsoft Visual C++ 9.0 is required Unable to find vcvarsall.bat ，可以安装<a href="https://www.microsoft.com/en-us/download/details.aspx?id=44266" target="_blank" rel="external">Micorsoft Visual C++ Compiler for Python 2.7</a> 。</p>
+<h3 id="fabric使用"><a href="#fabric使用" class="headerlink" title="fabric使用"></a>fabric使用</h3><p>新建py脚本：fabfile.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">()</span>:</span></div><div class="line">    print(<span class="string">"Hello world!"</span>)</div><div class="line">    </div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">hi</span><span class="params">()</span>:</span></div><div class="line">    print(<span class="string">"Hello world!"</span>)</div></pre></td></tr></table></figure>
+<p>执行fab命令:执行hello函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fab hello</div></pre></td></tr></table></figure>
+<p> 如果当前模块下没有fabfile.py文件，那么需要指定-f参数.</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fab -f test.py hello</div></pre></td></tr></table></figure>
+<p>使用参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(name, value)</span>:</span></div><div class="line">    print(<span class="string">"%s = %s!"</span> % (name, value))</div></pre></td></tr></table></figure>
+<p>带参执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fab hello:name=age,value=20</div></pre></td></tr></table></figure>
+<p>执行本地操作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> fabric.api <span class="keyword">import</span> local, lcd</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">lsfab</span><span class="params">()</span>:</span></div><div class="line">　　<span class="keyword">with</span> lcd(<span class="string">'~/tmp/fab'</span>):</div><div class="line">   　　local(<span class="string">'ls'</span>)</div></pre></td></tr></table></figure>
+<p>执行远程操作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">setting_ci</span><span class="params">()</span>:</span></div><div class="line">    local(<span class="string">'echo "add and commit settings in local"'</span>)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">update_setting_remote</span><span class="params">()</span>:</span></div><div class="line">     <span class="keyword">print</span> <span class="string">"remote update"</span></div><div class="line">     <span class="keyword">with</span> cd(<span class="string">'~/temp'</span>):   <span class="comment">#cd用于进入某个目录</span></div><div class="line">         run(<span class="string">'ls -l | wc -l'</span>)  <span class="comment">#远程操作用run</span></div></pre></td></tr></table></figure>
+<p>多服务器操作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/env python</span></div><div class="line"><span class="comment"># encoding: utf-8</span></div><div class="line"></div><div class="line"><span class="keyword">from</span> fabric.api <span class="keyword">import</span> *</div><div class="line">env.roledefs = &#123;</div><div class="line">            <span class="string">'testserver'</span>: [<span class="string">'user1@host1:port1'</span>,],</div><div class="line">            <span class="string">'productserver'</span>: [<span class="string">'user2@host2:port2'</span>, ]</div><div class="line">            &#125;            </div><div class="line"></div><div class="line"><span class="meta">@roles('testserver')</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">task1</span><span class="params">()</span>:</span></div><div class="line">    run(<span class="string">'ls -l | wc -l'</span>)</div><div class="line"></div><div class="line"><span class="meta">@roles('productserver')</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">task2</span><span class="params">()</span>:</span></div><div class="line">    run(<span class="string">'ls ~/temp/ | wc -l'</span>)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">do</span><span class="params">()</span>:</span></div><div class="line">    execute(task1)</div><div class="line">    execute(task2)</div></pre></td></tr></table></figure>
+<p>用不同颜色打印</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> fabric.colors <span class="keyword">import</span> *</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">show</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">print</span> green(<span class="string">'success'</span>)</div><div class="line">    <span class="keyword">print</span> red(<span class="string">'fail'</span>)</div><div class="line">    <span class="keyword">print</span> yellow(<span class="string">'yellow'</span>)</div></pre></td></tr></table></figure>
+<p>fabric 命令行工具</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">装饰器作用？</div><div class="line">    @task   # 定义任务 @task(alias=&apos;dwm&apos;) fab --list</div><div class="line">    @parallel # 并行处理</div><div class="line"></div><div class="line">    命令行常用： fab --help</div><div class="line">    fab -l             -- 显示可用的task（命令）</div><div class="line">    fab -H             -- 指定host，支持多host逗号分开</div><div class="line">    fab -R             -- 指定role，支持多个</div><div class="line">    fab -P             -- 并发数，默认是串行</div><div class="line">    fab -w             -- warn_only，默认是碰到异常直接abort退出</div><div class="line">    fab -f             -- 指定入口文件，fab默认入口文件是：fabfile/fabfile.py</div></pre></td></tr></table></figure>
+<p><a href="http://docs.fabfile.org/en/1.13/" target="_blank" rel="external">☞更多参考官网教程</a></p>
 
       
     </div>
@@ -475,7 +484,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/linux/" rel="tag"># linux</a>
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/运维/" rel="tag"># 运维</a>
           
         </div>
       
@@ -488,15 +499,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/21/tmux/" rel="next" title="tmux">
-                <i class="fa fa-chevron-left"></i> tmux
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/21/tmux/" rel="prev" title="tmux">
+                tmux <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -522,8 +533,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/04/17/linux进程资源信息/"
-           data-title="linux进程资源信息" data-url="https://ccrsky.github.io/2017/04/17/linux进程资源信息/">
+      <div class="ds-thread" data-thread-key="2016/02/14/fabric/"
+           data-title="fabric" data-url="https://ccrsky.github.io/2016/02/14/fabric/">
       </div>
     
   </div>
@@ -665,7 +676,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux进程与资源管理"><span class="nav-number">1.</span> <span class="nav-text">Linux进程与资源管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前后台进程及切换"><span class="nav-number">1.1.</span> <span class="nav-text">前后台进程及切换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看进程"><span class="nav-number">1.2.</span> <span class="nav-text">查看进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序优先级"><span class="nav-number">1.3.</span> <span class="nav-text">程序优先级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看系统相关信息"><span class="nav-number">1.4.</span> <span class="nav-text">查看系统相关信息</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fabric使用"><span class="nav-number">2.</span> <span class="nav-text">fabric使用</span></a></li></ol></div>
             
 
           </div>

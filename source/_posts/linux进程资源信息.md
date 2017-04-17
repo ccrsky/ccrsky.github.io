@@ -2,6 +2,11 @@
 title: linux进程资源信息
 date: 2017-04-17 01:24:36
 tags:
+    - linux
+
+category: 
+    - linux
+    
 ---
 ## Linux进程与资源管理
 Linux最棒的地方在于它的多用户多任务环境，记录下多用户多任务相关的几个常用命令。

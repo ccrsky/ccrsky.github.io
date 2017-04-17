@@ -5,6 +5,9 @@
   "hexo": {
     "version": "3.2.2"
   },
+  "scripts": {
+    "deploy": "git subtree push --prefix=public origin master"
+  },
   "dependencies": {
     "hexo": "^3.2.0",
     "hexo-generator-archive": "^0.1.4",
@@ -18,3 +21,4 @@
     "hexo-server": "^0.2.0"
   }
 }
+
