@@ -1,5 +1,5 @@
 ---
-title: js object
+title: javascript对象
 date: 2016-02-11 18:44:09
 tags:
     - js
