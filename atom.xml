@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2017-04-17T17:12:07.000Z</updated>
+  <updated>2017-04-21T03:51:23.000Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UTF-8 without BOM</title>
+    <link href="https://ccrsky.github.io/2017/04/21/UTF-8-without-BOM/"/>
+    <id>https://ccrsky.github.io/2017/04/21/UTF-8-without-BOM/</id>
+    <published>2017-04-21T03:49:42.000Z</published>
+    <updated>2017-04-21T03:51:23.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天遇到一个文件编码问题，导致代码异常；经过排查发现：文件编码是 UTF-8 + BOM，表现形式如下：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;
+    
+    </summary>
+    
+      <category term="常见问题" scheme="https://ccrsky.github.io/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+    
+      <category term="常见问题" scheme="https://ccrsky.github.io/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>linux进程资源信息</title>
@@ -60,7 +82,7 @@
     <link href="https://ccrsky.github.io/2016/02/14/fabric%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     <id>https://ccrsky.github.io/2016/02/14/fabric快速入门/</id>
     <published>2016-02-14T05:07:01.000Z</published>
-    <updated>2017-04-17T17:58:02.000Z</updated>
+    <updated>2017-04-21T03:51:30.000Z</updated>
     
     <summary type="html">
     
