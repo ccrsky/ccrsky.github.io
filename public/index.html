@@ -381,9 +381,9 @@
       
         
           
-            <p>今天遇到一个文件编码问题，导致代码异常；经过排查发现：文件编码是 UTF-8 + BOM，表现形式如下：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="string">'*&#123;name:'</span>test<span class="string">'&#125;'</span>;</div></pre></td></tr></table></figure></p>
+            <p>今天遇到一个文件编码问题(非法字符<code>\ufeff</code>)，导致代码异常；经过排查发现：文件编码是 UTF-8 + BOM，表现形式如下：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="string">'*&#123;name:'</span>test<span class="string">'&#125;'</span>;</div></pre></td></tr></table></figure></p>
 <p>但是在编辑器（我用的<code>sublime text</code>）中<strong>看不到那个星号</strong>，在chrome源码显示面板中可以看到，于是设置文件编码<code>sublime text : File &gt; Set File Encoding to(或者保存utf-8编码)</code>，星号依然存在。</p>
-<p>解决方案：<br>由于本机安装了<code>Android studio</code>,于是用AS打开该文件，设置编码文件为<code>UTF-8</code>即可去掉BOM。</p>
+<p>解决方案：<br>由于本机安装了<code>Android studio</code>,于是用AS打开该文件，设置编码文件为<code>GBK</code> ,然后设置为<code>UTF-8</code>(特殊字符会变成<code>??</code>去掉多余的<code>?</code>),即可去掉BOM。</p>
 <p>在排除过程中也发现另外一个类似的问题:服务端json编码<code>UTF-8 + BOM</code>导致json解析报错。<br>解决方案：<br>设置服务端数据编码格式为<code>UTF-8</code></p>
 
           
