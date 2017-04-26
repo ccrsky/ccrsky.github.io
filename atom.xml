@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2017-04-21T08:39:00.000Z</updated>
+  <updated>2017-04-26T12:53:10.000Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sed常用操作命令</title>
+    <link href="https://ccrsky.github.io/2017/04/26/sed%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
+    <id>https://ccrsky.github.io/2017/04/26/sed常用操作命令/</id>
+    <published>2017-04-26T12:46:08.000Z</published>
+    <updated>2017-04-26T12:53:10.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;SED命令&quot;&gt;&lt;a href=&quot;#SED命令&quot; class=&quot;headerlink&quot; title=&quot;SED命令&quot;&gt;&lt;/a&gt;SED命令&lt;/h4&gt;&lt;p&gt;SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。&lt;/p&gt;
+&lt;h4 id=&quot;原理
+    
+    </summary>
+    
+      <category term="linux" scheme="https://ccrsky.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://ccrsky.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>UTF-8 without BOM</title>
@@ -31,9 +52,9 @@
       <category term="常见问题" scheme="https://ccrsky.github.io/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     
     
-      <category term="常见问题" scheme="https://ccrsky.github.io/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
-    
       <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+      <category term="常见问题" scheme="https://ccrsky.github.io/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
