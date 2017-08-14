@@ -31,7 +31,7 @@ tags:
 
 ```html
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86   
-    src="http://music.163.com/outchain/player?type=2&id=25706282&auto=0&height=66">  
+    src="//music.163.com/outchain/player?type=2&id=25706282&auto=0&height=66">  
 </iframe> 
 ```
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86   
@@ -42,7 +42,7 @@ tags:
 #### 插入喜马拉雅
 
 ```html
-<iframe height="36" width="260" src="http://www.ximalaya.com/swf/sound/red.swf?id=36371956" frameborder=0 allowfullscreen></iframe>
+<iframe height="36" width="260" src="//www.ximalaya.com/swf/sound/red.swf?id=36371956" frameborder=0 allowfullscreen></iframe>
 ```
 
 
