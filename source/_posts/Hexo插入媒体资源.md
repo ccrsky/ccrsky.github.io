@@ -35,7 +35,7 @@ tags:
 </iframe> 
 ```
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86   
-    src="http://music.163.com/outchain/player?type=2&id=25706282&auto=0&height=66">  
+    src="//music.163.com/outchain/player?type=2&id=25706282&auto=0&height=66">  
 </iframe> 
 
 
@@ -46,7 +46,7 @@ tags:
 ```
 
 
-<object type="application/x-shockwave-flash" id="ximalaya_player" data="http://www.ximalaya.com/swf/sound/red.swf?id=36371956" width="260" height="36"></object>
+<object type="application/x-shockwave-flash" id="ximalaya_player" data="//www.ximalaya.com/swf/sound/red.swf?id=36371956" width="260" height="36"></object>
 
 
 ### 插入视频
