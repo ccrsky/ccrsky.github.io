@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2017-04-26T12:53:10.000Z</updated>
+  <updated>2017-08-14T17:27:34.000Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -14,6 +14,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo插入媒体资源</title>
+    <link href="https://ccrsky.github.io/2017/08/15/Hexo%E6%8F%92%E5%85%A5%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90/"/>
+    <id>https://ccrsky.github.io/2017/08/15/Hexo插入媒体资源/</id>
+    <published>2017-08-14T16:59:44.000Z</published>
+    <updated>2017-08-14T17:27:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;通常我们会在Hexo文章中插入媒体资源如图片，音频，视频，那么让我们来看看如何插入&lt;/p&gt;
+&lt;h3 id=&quot;插入图片&quot;&gt;&lt;a href=&quot;#插入图片&quot; class=&quot;headerlink&quot; title=&quot;插入图片&quot;&gt;&lt;/a&gt;插入图片&lt;/h3&gt;&lt;h4 id=&quot;本地图片&quot;&gt;&lt;a
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://ccrsky.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Handlebars模板使用</title>
+    <link href="https://ccrsky.github.io/2017/08/15/Handlebars%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8/"/>
+    <id>https://ccrsky.github.io/2017/08/15/Handlebars模板使用/</id>
+    <published>2017-08-14T16:09:36.000Z</published>
+    <updated>2017-08-14T16:59:03.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://handlebarsjs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Handlebars&lt;/a&gt; 是 JavaScript 一个语义模板库，通过对view和data的分离来快速构建Web模板。&lt;/p&gt;
+&lt;p&gt;&lt;
+    
+    </summary>
+    
+      <category term="js" scheme="https://ccrsky.github.io/categories/js/"/>
+    
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>sed常用操作命令</title>
@@ -52,9 +92,9 @@
       <category term="常见问题" scheme="https://ccrsky.github.io/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     
     
-      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
-    
       <category term="常见问题" scheme="https://ccrsky.github.io/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
     
   </entry>
   
