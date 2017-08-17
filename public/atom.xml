@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2017-08-14T17:40:33.000Z</updated>
+  <updated>2017-08-17T12:21:31.000Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>next快速入门</title>
+    <link href="https://ccrsky.github.io/2017/08/17/next/"/>
+    <id>https://ccrsky.github.io/2017/08/17/next/</id>
+    <published>2017-08-17T12:16:53.000Z</published>
+    <updated>2017-08-17T12:21:31.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Next&quot;&gt;&lt;a href=&quot;#Next&quot; class=&quot;headerlink&quot; title=&quot;Next&quot;&gt;&lt;/a&gt;Next&lt;/h2&gt;&lt;p&gt;Next是react服务端渲染框架。&lt;/p&gt;
+&lt;h3 id=&quot;特点&quot;&gt;&lt;a href=&quot;#特点&quot; class=&quot;header
+    
+    </summary>
+    
+      <category term="js" scheme="https://ccrsky.github.io/categories/js/"/>
+    
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo插入媒体资源</title>
