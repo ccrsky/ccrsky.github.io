@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="linux," />
+  <meta name="keywords" content="js,react native," />
 
 
 
@@ -89,28 +89,22 @@
 
 
 
-<meta name="description" content="Linux进程与资源管理Linux最棒的地方在于它的多用户多任务环境，记录下多用户多任务相关的几个常用命令。
-前后台进程及切换有时候我们并不一定要在屏幕前工作，这时就需要使用到背景工作管理的一些指令，如 &amp;amp;，ctrl+z。
-如果想让程序在背景下执行，可以使用 &amp;amp;,由于是背景，该程序的输入并不会显示在屏幕上。
-语法格式: command &amp;amp;
-12345# 程序进入背景执行fi">
+<meta name="description" content="开发React Native时，启动包服务器的默认端口是8081，如果跟现有服务器端口冲突的话，可以修改成想要的端口，修改内容如下：
+修改包服务器端口号包服务器启动监听端口，在项目的node_modules/react-native/local-cli/server/server.js中
+12345678options: [&amp;#123;    command: &apos;--port [number]&apos;,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux进程资源信息">
-<meta property="og:url" content="https://ccrsky.github.io/2017/04/17/linux进程资源信息/index.html">
+<meta property="og:title" content="[RN]修改包服务器端口">
+<meta property="og:url" content="https://ccrsky.github.io/2017/09/11/RN-修改包服务器端口/index.html">
 <meta property="og:site_name" content="ccrsky">
-<meta property="og:description" content="Linux进程与资源管理Linux最棒的地方在于它的多用户多任务环境，记录下多用户多任务相关的几个常用命令。
-前后台进程及切换有时候我们并不一定要在屏幕前工作，这时就需要使用到背景工作管理的一些指令，如 &amp;amp;，ctrl+z。
-如果想让程序在背景下执行，可以使用 &amp;amp;,由于是背景，该程序的输入并不会显示在屏幕上。
-语法格式: command &amp;amp;
-12345# 程序进入背景执行fi">
-<meta property="og:updated_time" content="2017-04-17T17:12:07.000Z">
+<meta property="og:description" content="开发React Native时，启动包服务器的默认端口是8081，如果跟现有服务器端口冲突的话，可以修改成想要的端口，修改内容如下：
+修改包服务器端口号包服务器启动监听端口，在项目的node_modules/react-native/local-cli/server/server.js中
+12345678options: [&amp;#123;    command: &apos;--port [number]&apos;,">
+<meta property="og:updated_time" content="2017-09-10T17:16:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux进程资源信息">
-<meta name="twitter:description" content="Linux进程与资源管理Linux最棒的地方在于它的多用户多任务环境，记录下多用户多任务相关的几个常用命令。
-前后台进程及切换有时候我们并不一定要在屏幕前工作，这时就需要使用到背景工作管理的一些指令，如 &amp;amp;，ctrl+z。
-如果想让程序在背景下执行，可以使用 &amp;amp;,由于是背景，该程序的输入并不会显示在屏幕上。
-语法格式: command &amp;amp;
-12345# 程序进入背景执行fi">
+<meta name="twitter:title" content="[RN]修改包服务器端口">
+<meta name="twitter:description" content="开发React Native时，启动包服务器的默认端口是8081，如果跟现有服务器端口冲突的话，可以修改成想要的端口，修改内容如下：
+修改包服务器端口号包服务器启动监听端口，在项目的node_modules/react-native/local-cli/server/server.js中
+12345678options: [&amp;#123;    command: &apos;--port [number]&apos;,">
 
 
 
@@ -138,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="https://ccrsky.github.io/2017/04/17/linux进程资源信息/"/>
+  <link rel="canonical" href="https://ccrsky.github.io/2017/09/11/RN-修改包服务器端口/"/>
 
 
 
 
 
-  <title> linux进程资源信息 | ccrsky </title>
+  <title> [RN]修改包服务器端口 | ccrsky </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -283,7 +277,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/04/17/linux进程资源信息/">
+    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/09/11/RN-修改包服务器端口/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ccrsky">
@@ -304,7 +298,7 @@
             
             
               
-                linux进程资源信息
+                [RN]修改包服务器端口
               
             
           </h1>
@@ -319,8 +313,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-17T01:24:36+08:00">
-                2017-04-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-11T00:38:23+08:00">
+                2017-09-11
               </time>
             
 
@@ -342,8 +336,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/js/react-native/" itemprop="url" rel="index">
+                    <span itemprop="name">react native</span>
                   </a>
                 </span>
 
@@ -360,8 +365,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/04/17/linux进程资源信息/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/17/linux进程资源信息/" itemprop="commentCount"></span>
+                <a href="/2017/09/11/RN-修改包服务器端口/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/09/11/RN-修改包服务器端口/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -387,44 +392,14 @@
       
 
       
-        <h2 id="Linux进程与资源管理"><a href="#Linux进程与资源管理" class="headerlink" title="Linux进程与资源管理"></a>Linux进程与资源管理</h2><p>Linux最棒的地方在于它的多用户多任务环境，记录下多用户多任务相关的几个常用命令。</p>
-<h3 id="前后台进程及切换"><a href="#前后台进程及切换" class="headerlink" title="前后台进程及切换"></a>前后台进程及切换</h3><p>有时候我们并不一定要在屏幕前工作，这时就需要使用到背景工作管理的一些指令，如 <code>&amp;</code>，<code>ctrl+z</code>。</p>
-<p>如果想让程序在背景下执行，可以使用 <code>&amp;</code>,由于是背景，该程序的输入并不会显示在屏幕上。</p>
-<p>语法格式: <code>command &amp;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 程序进入背景执行</div><div class="line">find / -name test &amp;</div><div class="line"></div><div class="line"># fg 将程序拉回屏幕前执行</div><div class="line">fg</div></pre></td></tr></table></figure>
-<p>也可以通过 <code>ctrl+z</code> 将正在运行的工作丢到背景下，放在背景下的最大好处就是不会被 <code>ctrl+c</code> 指令中断。</p>
-<p>如果出现某个时候需要暂时退出vim，但又不想保存退出，可 <code>ctrl+z</code> 暂时退出</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 程序进入背景执行</div><div class="line">vim a.js</div><div class="line"></div><div class="line"># 将vim放到背景中，并没有退出</div><div class="line">ctrl+z</div></pre></td></tr></table></figure>
-<p>可使用 <code>jobs</code> 可以查看任务列表，配合 <code>bg</code> ，<code>fg</code>将程序拉回屏幕。</p>
-<p>查看背景程序：<code>jobs</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 查看背景程序</div><div class="line">jobs</div><div class="line">[1]  + suspended  vim a.js</div><div class="line"></div><div class="line"># 恢复vim编辑</div><div class="line">fg %1</div></pre></td></tr></table></figure>
-<p><code>fg &amp; bg</code>恢复背景进程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#number 为jobs中方括号中的编号</div><div class="line">fg  %number</div><div class="line"></div><div class="line">#将背景程序中的程序由stopped变成running</div><div class="line">bg %number</div></pre></td></tr></table></figure>
-<p><code>kill</code> 杀掉背景程序中的程序</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">kill -signal %number</div><div class="line">signal</div><div class="line">    -1 :重新读取参数配置（类似reload）</div><div class="line">    -2 :类似Ctrl+c中断工作</div><div class="line">    -9 :强制杀掉进程</div><div class="line">    -15 :停止一个工作（默认值）</div><div class="line">    </div><div class="line">#杀掉vim 进程    </div><div class="line">kill -9 %1</div></pre></td></tr></table></figure>
-<h3 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h3><p><code>ps</code> 查看进程信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">ps -aux</div><div class="line">参数说明</div><div class="line">    a :显示所有程序</div><div class="line">    u :列出所有用户程序</div><div class="line">    x :列出所有tty程序</div><div class="line">    </div><div class="line"># 显示进程信息    </div><div class="line">ps -aux</div><div class="line"></div><div class="line">USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND</div><div class="line">nali              2557   3.0  1.2  2832304  49180   ??  S    五04下午   4:54.94 /Applications/iTerm 2.app/Contents/MacOS/iTerm2</div><div class="line">nali               920   1.6  0.8  2939412  34404   ??  S    四07下午   5:26.69 /Applications/QQ.app/Contents/MacOS/QQ   </div><div class="line"></div><div class="line">#干掉进程 </div><div class="line">kill -9 pid</div></pre></td></tr></table></figure>
-<p>另外一个显示进程的命令是 <code>top</code> 可动态显示。<br>查看内存使用：<code>free</code><br>查看系统资源：<code>sar</code></p>
-<h3 id="程序优先级"><a href="#程序优先级" class="headerlink" title="程序优先级"></a>程序优先级</h3><p>由于CPU资源有限，优先级高的程序会先获取CPU资源。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ps -l</div><div class="line"></div><div class="line">UID   PID  PPID        F CPU PRI NI       SZ    RSS WCHAN     S             ADDR TTY           TIME CMD</div><div class="line">501  9005  2557     4006   0  31  0  2507116   9148 -      Ss                  0 ttys001    0:00.07 /Applications/iTerm 2.app/Contents/MacOS/iTerm2 --server login </div><div class="line"></div><div class="line">#PRI 代表程序优先级，越小越先被执行</div><div class="line">NI 代表nice的值</div></pre></td></tr></table></figure>
-<p><em>PRI越小越优先被执行</em></p>
-<p><code>PRI(new) = PRI(old) + nice</code></p>
-<blockquote>
-<p>一般用户可用的nice值 0~19<br>root可用的nice值-20~19</p>
-</blockquote>
-<p>调整程序的的优先级<br><code>nice [-n number] command</code></p>
-<p>调整运行中程序的优先级<br><code>renice number PID</code></p>
-<h3 id="查看系统相关信息"><a href="#查看系统相关信息" class="headerlink" title="查看系统相关信息"></a>查看系统相关信息</h3><p><code>uname</code> 查看系统信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">uname </div><div class="line">参数信息：</div><div class="line">    -a :列出所有信息</div><div class="line">    -p :列出CPU信息</div><div class="line">    -r :列出核心版本信息</div><div class="line">    -n :列出版本信息</div></pre></td></tr></table></figure>
-<p><code>dmesg</code> 查看启动一闪而过的信息</p>
-<p><code>uptime</code> 显示开机时间及负载相关信息</p>
-<p><code>last</code> 显示登录信息</p>
-<p><code>hostname</code> 显示主机名</p>
-<p><code>who</code> 查看当前系统上的用户(只列出用户名及登录时间)</p>
-<p><code>w</code> 查看当前系统上的用户(列出用户名及登录时间 + 源地址IP + 工作项 + ..)</p>
-<p><code>whoami</code> 显示当前登录用户名</p>
-<p><code>ntpdate</code> 网络校时</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 校时服务器 time.stdtime.gov.tw</div><div class="line"></div><div class="line"># 执行校时命令</div><div class="line">ntpdate time.stdtime.gov.tw</div><div class="line"></div><div class="line"># 可配合crontab定时校时</div></pre></td></tr></table></figure>
+        <p>开发React Native时，启动包服务器的默认端口是<code>8081</code>，如果跟现有服务器端口冲突的话，可以修改成想要的端口，修改内容如下：</p>
+<h3 id="修改包服务器端口号"><a href="#修改包服务器端口号" class="headerlink" title="修改包服务器端口号"></a>修改包服务器端口号</h3><p>包服务器启动监听端口，在项目的<code>node_modules/react-native/local-cli/server/server.js中</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">options: [&#123;</div><div class="line">    <span class="attr">command</span>: <span class="string">'--port [number]'</span>,</div><div class="line">    <span class="attr">default</span>: <span class="number">8081</span>,</div><div class="line">    <span class="attr">parse</span>: <span class="function">(<span class="params">val</span>) =&gt;</span> <span class="built_in">Number</span>(val),</div><div class="line">  &#125;,</div><div class="line"></div><div class="line">  ...</div><div class="line">  ]</div></pre></td></tr></table></figure>
+<p>由此可见我可以在运行时<code>react-native start --port=8082</code>动态指定端口</p>
+<h3 id="修改应用程序启动时，读取逻辑代码的的地址"><a href="#修改应用程序启动时，读取逻辑代码的的地址" class="headerlink" title="修改应用程序启动时，读取逻辑代码的的地址"></a>修改应用程序启动时，读取逻辑代码的的地址</h3><p>在<code>ios/Demo01/AppDelegate.m</code>中找到下面代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">// 修改后代码</div><div class="line">  jsCodeLocation = [NSURL URLWithString:@&quot;http://localhost:8081/index.ios.bundle&quot;];</div><div class="line">// jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@&quot;index.ios&quot; fallbackResource:nil];</div></pre></td></tr></table></figure>
+<h3 id="修改websocket监听端口"><a href="#修改websocket监听端口" class="headerlink" title="修改websocket监听端口"></a>修改websocket监听端口</h3><p>在项目的<code>node_modules/react-native/Libraries/WebSocket/RCTWebSocketExecutor</code>中修改下端口。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">- (void)setUp</div><div class="line">&#123;</div><div class="line">  if (!_url) &#123;</div><div class="line">    NSInteger port = [[[_bridge bundleURL] port] integerValue] ?: 8081;</div><div class="line">    NSString *host = [[_bridge bundleURL] host] ?: @&quot;localhost&quot;;</div><div class="line">    NSString *URLString = [NSString stringWithFormat:@&quot;http://%@:%zd/debugger-proxy?role=client&quot;, host, port];</div><div class="line">    _url = [RCTConvert NSURL:URLString];</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -475,7 +450,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/linux/" rel="tag"># linux</a>
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/react-native/" rel="tag"># react native</a>
           
         </div>
       
@@ -488,8 +465,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/21/tmux使用/" rel="next" title="tmux使用">
-                <i class="fa fa-chevron-left"></i> tmux使用
+              <a href="/2017/08/17/next/" rel="next" title="next快速入门">
+                <i class="fa fa-chevron-left"></i> next快速入门
               </a>
             
           </div>
@@ -498,8 +475,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/21/UTF-8-without-BOM/" rel="prev" title="UTF-8 without BOM">
-                UTF-8 without BOM <i class="fa fa-chevron-right"></i>
+              <a href="/2017/09/11/RN-真机调试及内部发布/" rel="prev" title="[RN]真机调试及内部发布">
+                [RN]真机调试及内部发布 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -526,8 +503,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/04/17/linux进程资源信息/"
-           data-title="linux进程资源信息" data-url="https://ccrsky.github.io/2017/04/17/linux进程资源信息/">
+      <div class="ds-thread" data-thread-key="2017/09/11/RN-修改包服务器端口/"
+           data-title="[RN]修改包服务器端口" data-url="https://ccrsky.github.io/2017/09/11/RN-修改包服务器端口/">
       </div>
     
   </div>
@@ -669,7 +646,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux进程与资源管理"><span class="nav-number">1.</span> <span class="nav-text">Linux进程与资源管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前后台进程及切换"><span class="nav-number">1.1.</span> <span class="nav-text">前后台进程及切换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看进程"><span class="nav-number">1.2.</span> <span class="nav-text">查看进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序优先级"><span class="nav-number">1.3.</span> <span class="nav-text">程序优先级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看系统相关信息"><span class="nav-number">1.4.</span> <span class="nav-text">查看系统相关信息</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改包服务器端口号"><span class="nav-number">1.</span> <span class="nav-text">修改包服务器端口号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改应用程序启动时，读取逻辑代码的的地址"><span class="nav-number">2.</span> <span class="nav-text">修改应用程序启动时，读取逻辑代码的的地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改websocket监听端口"><span class="nav-number">3.</span> <span class="nav-text">修改websocket监听端口</span></a></li></ol></div>
             
 
           </div>
