@@ -2,10 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ccrsky</title>
   
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2017-09-10T17:27:00.000Z</updated>
+  <updated>2018-01-31T13:03:35.227Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -16,17 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>pm2的使用</title>
+    <link href="https://ccrsky.github.io/2018/01/31/pm2%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://ccrsky.github.io/2018/01/31/pm2的使用/</id>
+    <published>2018-01-31T12:52:26.000Z</published>
+    <updated>2018-01-31T13:03:35.227Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;pm2是一个高级node进程管理工具，通过它不仅可以管理node应用，也可以管理Python等其他语言的应用；本文是看完官网后做的笔录，适合快速入门pm2命令行工具的使用，具体细节可参考&lt;a href=&quot;http://pm2.keymetrics.io/docs/usage
+      
+    
+    </summary>
+    
+      <category term="js" scheme="https://ccrsky.github.io/categories/js/"/>
+    
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+      <category term="node" scheme="https://ccrsky.github.io/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
     <title>[RN]真机调试及内部发布</title>
     <link href="https://ccrsky.github.io/2017/09/11/RN-%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%8F%8A%E5%86%85%E9%83%A8%E5%8F%91%E5%B8%83/"/>
     <id>https://ccrsky.github.io/2017/09/11/RN-真机调试及内部发布/</id>
     <published>2017-09-10T17:15:47.000Z</published>
-    <updated>2017-09-10T17:27:00.000Z</updated>
+    <updated>2018-01-19T07:29:27.198Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;一般我们开发RN都是在模拟器上调试的，那么真机是如何调试的呢？&lt;/p&gt;
+      
+      
+        &lt;p&gt;一般我们开发RN都是在模拟器上调试的，那么真机是如何调试的呢？&lt;/p&gt;
 &lt;h3 id=&quot;真机调试&quot;&gt;&lt;a href=&quot;#真机调试&quot; class=&quot;headerlink&quot; title=&quot;真机调试&quot;&gt;&lt;/a&gt;真机调试&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;配置好签名证书，并将包环境设置成D
+      
     
     </summary>
     
@@ -46,12 +75,15 @@
     <link href="https://ccrsky.github.io/2017/09/11/RN-%E4%BF%AE%E6%94%B9%E5%8C%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E5%8F%A3/"/>
     <id>https://ccrsky.github.io/2017/09/11/RN-修改包服务器端口/</id>
     <published>2017-09-10T16:38:23.000Z</published>
-    <updated>2017-09-10T17:16:09.000Z</updated>
+    <updated>2018-01-19T07:29:27.198Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;开发React Native时，启动包服务器的默认端口是&lt;code&gt;8081&lt;/code&gt;，如果跟现有服务器端口冲突的话，可以修改成想要的端口，修改内容如下：&lt;/p&gt;
+      
+      
+        &lt;p&gt;开发React Native时，启动包服务器的默认端口是&lt;code&gt;8081&lt;/code&gt;，如果跟现有服务器端口冲突的话，可以修改成想要的端口，修改内容如下：&lt;/p&gt;
 &lt;h3 id=&quot;修改包服务器端口号&quot;&gt;&lt;a href=&quot;#修改包服务器端口号&quot; class=&quot;header
+      
     
     </summary>
     
@@ -71,12 +103,18 @@
     <link href="https://ccrsky.github.io/2017/08/17/next/"/>
     <id>https://ccrsky.github.io/2017/08/17/next/</id>
     <published>2017-08-17T12:16:53.000Z</published>
-    <updated>2017-08-17T12:21:31.000Z</updated>
+    <updated>2018-01-31T12:51:24.284Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Next&quot;&gt;&lt;a href=&quot;#Next&quot; class=&quot;headerlink&quot; title=&quot;Next&quot;&gt;&lt;/a&gt;Next&lt;/h2&gt;&lt;p&gt;Next是react服务端渲染框架。&lt;/p&gt;
-&lt;h3 id=&quot;特点&quot;&gt;&lt;a href=&quot;#特点&quot; class=&quot;header
+      
+      
+        &lt;p&gt;Next是react服务端渲染框架。&lt;/p&gt;
+&lt;h3 id=&quot;特点&quot;&gt;&lt;a href=&quot;#特点&quot; class=&quot;headerlink&quot; title=&quot;特点&quot;&gt;&lt;/a&gt;特点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;默认服务端渲染&lt;/li&gt;
+&lt;li&gt;自动切分代码&lt;/li&gt;
+&lt;li&gt;基于web
+      
     
     </summary>
     
@@ -92,12 +130,15 @@
     <link href="https://ccrsky.github.io/2017/08/15/Hexo%E6%8F%92%E5%85%A5%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90/"/>
     <id>https://ccrsky.github.io/2017/08/15/Hexo插入媒体资源/</id>
     <published>2017-08-14T16:59:44.000Z</published>
-    <updated>2017-08-14T17:40:33.000Z</updated>
+    <updated>2018-01-19T07:29:27.197Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;通常我们会在Hexo文章中插入媒体资源如图片，音频，视频，那么让我们来看看如何插入&lt;/p&gt;
+      
+      
+        &lt;p&gt;通常我们会在Hexo文章中插入媒体资源如图片，音频，视频，那么让我们来看看如何插入&lt;/p&gt;
 &lt;h3 id=&quot;插入图片&quot;&gt;&lt;a href=&quot;#插入图片&quot; class=&quot;headerlink&quot; title=&quot;插入图片&quot;&gt;&lt;/a&gt;插入图片&lt;/h3&gt;&lt;h4 id=&quot;本地图片&quot;&gt;&lt;a
+      
     
     </summary>
     
@@ -111,12 +152,15 @@
     <link href="https://ccrsky.github.io/2017/08/15/Handlebars%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8/"/>
     <id>https://ccrsky.github.io/2017/08/15/Handlebars模板使用/</id>
     <published>2017-08-14T16:09:36.000Z</published>
-    <updated>2017-08-14T16:59:03.000Z</updated>
+    <updated>2018-01-19T07:29:27.197Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://handlebarsjs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Handlebars&lt;/a&gt; 是 JavaScript 一个语义模板库，通过对view和data的分离来快速构建Web模板。&lt;/p&gt;
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://handlebarsjs.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Handlebars&lt;/a&gt; 是 JavaScript 一个语义模板库，通过对view和data的分离来快速构建Web模板。&lt;/p&gt;
 &lt;p&gt;&lt;
+      
     
     </summary>
     
@@ -132,12 +176,15 @@
     <link href="https://ccrsky.github.io/2017/04/26/sed%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
     <id>https://ccrsky.github.io/2017/04/26/sed常用操作命令/</id>
     <published>2017-04-26T12:46:08.000Z</published>
-    <updated>2017-04-26T12:53:10.000Z</updated>
+    <updated>2018-01-19T07:29:27.203Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;SED命令&quot;&gt;&lt;a href=&quot;#SED命令&quot; class=&quot;headerlink&quot; title=&quot;SED命令&quot;&gt;&lt;/a&gt;SED命令&lt;/h4&gt;&lt;p&gt;SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。&lt;/p&gt;
+      
+      
+        &lt;h4 id=&quot;SED命令&quot;&gt;&lt;a href=&quot;#SED命令&quot; class=&quot;headerlink&quot; title=&quot;SED命令&quot;&gt;&lt;/a&gt;SED命令&lt;/h4&gt;&lt;p&gt;SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。&lt;/p&gt;
 &lt;h4 id=&quot;原理
+      
     
     </summary>
     
@@ -153,11 +200,14 @@
     <link href="https://ccrsky.github.io/2017/04/21/UTF-8-without-BOM/"/>
     <id>https://ccrsky.github.io/2017/04/21/UTF-8-without-BOM/</id>
     <published>2017-04-21T03:49:42.000Z</published>
-    <updated>2017-04-21T08:39:00.000Z</updated>
+    <updated>2018-01-19T07:29:27.198Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;今天遇到一个文件编码问题(非法字符&lt;code&gt;\ufeff&lt;/code&gt;)，导致代码异常；经过排查发现：文件编码是 UTF-8 + BOM，表现形式如下：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutte
+      
+      
+        &lt;p&gt;今天遇到一个文件编码问题(非法字符&lt;code&gt;\ufeff&lt;/code&gt;)，导致代码异常；经过排查发现：文件编码是 UTF-8 + BOM，表现形式如下：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutte
+      
     
     </summary>
     
@@ -175,11 +225,14 @@
     <link href="https://ccrsky.github.io/2017/04/17/linux%E8%BF%9B%E7%A8%8B%E8%B5%84%E6%BA%90%E4%BF%A1%E6%81%AF/"/>
     <id>https://ccrsky.github.io/2017/04/17/linux进程资源信息/</id>
     <published>2017-04-16T17:24:36.000Z</published>
-    <updated>2017-04-17T17:12:07.000Z</updated>
+    <updated>2018-01-19T07:29:27.202Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Linux进程与资源管理&quot;&gt;&lt;a href=&quot;#Linux进程与资源管理&quot; class=&quot;headerlink&quot; title=&quot;Linux进程与资源管理&quot;&gt;&lt;/a&gt;Linux进程与资源管理&lt;/h2&gt;&lt;p&gt;Linux最棒的地方在于它的多用户多任务环境，记录下多用户多
+      
+      
+        &lt;h2 id=&quot;Linux进程与资源管理&quot;&gt;&lt;a href=&quot;#Linux进程与资源管理&quot; class=&quot;headerlink&quot; title=&quot;Linux进程与资源管理&quot;&gt;&lt;/a&gt;Linux进程与资源管理&lt;/h2&gt;&lt;p&gt;Linux最棒的地方在于它的多用户多任务环境，记录下多用户多
+      
     
     </summary>
     
@@ -195,11 +248,14 @@
     <link href="https://ccrsky.github.io/2017/03/21/tmux%E4%BD%BF%E7%94%A8/"/>
     <id>https://ccrsky.github.io/2017/03/21/tmux使用/</id>
     <published>2017-03-21T04:34:33.000Z</published>
-    <updated>2017-04-17T18:00:38.000Z</updated>
+    <updated>2018-01-19T07:29:27.203Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;上篇讲到了 &lt;a href=&quot;http://www.jianshu.com/p/3436bcb17a03&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;iTerm2的基本使用&lt;/a&gt; ，iTerm2能够让我们迅速从不同的窗口中切换。通过 iTerm2 ，我
+      
+      
+        &lt;p&gt;上篇讲到了 &lt;a href=&quot;http://www.jianshu.com/p/3436bcb17a03&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;iTerm2的基本使用&lt;/a&gt; ，iTerm2能够让我们迅速从不同的窗口中切换。通过 iTerm2 ，我
+      
     
     </summary>
     
@@ -215,13 +271,16 @@
     <link href="https://ccrsky.github.io/2016/02/14/fabric%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     <id>https://ccrsky.github.io/2016/02/14/fabric快速入门/</id>
     <published>2016-02-14T05:07:01.000Z</published>
-    <updated>2017-04-21T03:51:30.000Z</updated>
+    <updated>2018-01-19T07:29:27.198Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Fabric是一个Python库，用于简化使用SSH的应用程序部署或系统管理任务。&lt;/p&gt;
+      
+      
+        &lt;p&gt;Fabric是一个Python库，用于简化使用SSH的应用程序部署或系统管理任务。&lt;/p&gt;
 &lt;p&gt;它提供的操作包括：执行本地或远程shell命令，上传/下载文件，以及其他辅助功能等。&lt;/p&gt;
 &lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerli
+      
     
     </summary>
     
@@ -239,11 +298,14 @@
     <link href="https://ccrsky.github.io/2016/02/11/javascript%E5%AF%B9%E8%B1%A1/"/>
     <id>https://ccrsky.github.io/2016/02/11/javascript对象/</id>
     <published>2016-02-11T10:44:09.000Z</published>
-    <updated>2017-04-17T17:55:14.000Z</updated>
+    <updated>2018-01-19T07:29:27.202Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;创建对象&quot;&gt;&lt;a href=&quot;#创建对象&quot; class=&quot;headerlink&quot; title=&quot;创建对象&quot;&gt;&lt;/a&gt;创建对象&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;
+      
+      
+        &lt;h4 id=&quot;创建对象&quot;&gt;&lt;a href=&quot;#创建对象&quot; class=&quot;headerlink&quot; title=&quot;创建对象&quot;&gt;&lt;/a&gt;创建对象&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;
+      
     
     </summary>
     
