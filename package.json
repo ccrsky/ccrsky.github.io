@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.5.0"
   },
   "scripts": {
     "deploy": "git subtree push --prefix=public origin master"
@@ -21,4 +21,3 @@
     "hexo-server": "^0.2.0"
   }
 }
-

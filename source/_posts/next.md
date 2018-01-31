@@ -9,7 +9,6 @@ category:
 ---
 
 
-## Next
 
 Next是react服务端渲染框架。
 
@@ -516,7 +515,7 @@ export default () => (
 ```
 
 ### 应用部署
-####部署步骤
+#### 部署步骤
 
 1. build代码
 2. 启动服务
