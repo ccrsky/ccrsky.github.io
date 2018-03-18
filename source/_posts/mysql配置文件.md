@@ -3,9 +3,11 @@ title: mysql配置文件
 date: 2018-02-26 20:02:12
 tags:
     - 数据库
+    - mysql
 
 category: 
     - 数据库
+
 ---
 
 mysql官网安装包中(5.7.18之后版本)不再提供my-default.cnf文件，可以从[https://dev.mysql.com/doc/refman/5.7/en/option-files.html](https://dev.mysql.com/doc/refman/5.7/en/option-files.html)找到配置项进行配置，看也可以按如下配置(参考[http://www.fx114.net/qa-220-164752.aspx](http://www.fx114.net/qa-220-164752.aspx))
@@ -86,6 +88,9 @@ max_heap_table_size = 134217728
 #大部分情况下关闭下面两项
 query_cache_size = 0
 query_cache_type = 0
+
+# 设置sql预计校验规则 （https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sql-mode-setting）
+sql_mode = "STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION"
 
 #####################用户进程分配到的内存设置BEGIN#############################
 
