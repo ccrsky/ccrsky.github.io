@@ -1,0 +1,892 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="linux," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ccrsky" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="SED命令SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。
+原理
+读一行到缓存区处理（模式空间）
+执行sed命令
+输出结果接着继续处理下一行（重复此流程直至结束）
+
+用途
+文本替换
+选择性的输出文本文件
+从文本文件的某处开始编辑
+无交互式的对文本文件进行编辑等
+
+命令格式123456789sed [option]  command filesoption:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sed常用操作命令">
+<meta property="og:url" content="https://ccrsky.github.io/2017/04/26/sed常用操作命令/index.html">
+<meta property="og:site_name" content="ccrsky">
+<meta property="og:description" content="SED命令SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。
+原理
+读一行到缓存区处理（模式空间）
+执行sed命令
+输出结果接着继续处理下一行（重复此流程直至结束）
+
+用途
+文本替换
+选择性的输出文本文件
+从文本文件的某处开始编辑
+无交互式的对文本文件进行编辑等
+
+命令格式123456789sed [option]  command filesoption:">
+<meta property="og:updated_time" content="2017-04-26T12:53:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="sed常用操作命令">
+<meta name="twitter:description" content="SED命令SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。
+原理
+读一行到缓存区处理（模式空间）
+执行sed命令
+输出结果接着继续处理下一行（重复此流程直至结束）
+
+用途
+文本替换
+选择性的输出文本文件
+从文本文件的某处开始编辑
+无交互式的对文本文件进行编辑等
+
+命令格式123456789sed [option]  command filesoption:">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ccrsky.github.io/2017/04/26/sed常用操作命令/"/>
+
+
+
+
+
+  <title> sed常用操作命令 | ccrsky </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3fd6baa6e8f699e13645d9df8d7b9dea";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ccrsky</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/04/26/sed常用操作命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ccrsky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avator.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ccrsky">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                sed常用操作命令
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-26T20:46:08+08:00">
+                2017-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/26/sed常用操作命令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/26/sed常用操作命令/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="SED命令"><a href="#SED命令" class="headerlink" title="SED命令"></a>SED命令</h4><p>SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。</p>
+<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><ol>
+<li>读一行到缓存区处理（模式空间）</li>
+<li>执行sed命令</li>
+<li>输出结果接着继续处理下一行（重复此流程直至结束）</li>
+</ol>
+<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><ul>
+<li>文本替换</li>
+<li>选择性的输出文本文件</li>
+<li>从文本文件的某处开始编辑</li>
+<li>无交互式的对文本文件进行编辑等</li>
+</ul>
+<h4 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">sed [option]  command files</div><div class="line">option:</div><div class="line">    -e:指定要执行的命令，使用该参数，我们可以指定多个命令</div><div class="line">    -n:默认情况下，模式空间中的内容在处理完成后将会打印到标准输出，该选项用于阻止该行为</div><div class="line">    -f:指定包含要执行的命令的脚本文件(一行一个命令,类似多个-e)</div><div class="line">    </div><div class="line">command：行定位（或正则）+ sed命令 （命令使用单引号包裹）</div><div class="line"></div><div class="line">sed -e &apos;1d&apos; -e &apos;2d&apos; -e &apos;5d&apos; demo.txt</div></pre></td></tr></table></figure>
+<p>在SED中使用的命令会作用于文本数据的所有行。如果只想将命令作用于特定的行或者某些行，则需要使用 “行寻址” 功能。</p>
+<h5 id="行寻址两种形式："><a href="#行寻址两种形式：" class="headerlink" title="行寻址两种形式："></a>行寻址两种形式：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">1.以数字形式表示的行区间</div><div class="line">sed -n &apos;3p&apos; demo.txt </div><div class="line"></div><div class="line"># 区间 </div><div class="line">sed -n &apos;2,5 p&apos; demo.txt </div><div class="line"></div><div class="line"># $ 表示自后一行 ^ 标识开始</div><div class="line">sed -n &apos;3,$ p&apos; demo.txt</div><div class="line"></div><div class="line">2.以文本模式来过滤行</div><div class="line">sed -n &apos;/Alchemist/, 5 p&apos; books.txt</div></pre></td></tr></table></figure>
+<h5 id="操作符"><a href="#操作符" class="headerlink" title="操作符 + , ~"></a>操作符 + , ~</h5><p>加号（+）操作符，它可以与逗号（,）操作符一起使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 从第二行开始下4行</div><div class="line">sed -n &apos;2,+4 p&apos; demo.txt</div></pre></td></tr></table></figure>
+<p>使用波浪线操作符（~）指定地址范围，它使用M~N（步长）的形式，告诉SED应该处理M行开始的每N行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 50~5匹配行号5，10，15等</div><div class="line">sed -n &apos;5~5 p&apos; demo.txt &gt; a.txt</div></pre></td></tr></table></figure>
+<blockquote>
+<p>sed操作不影响源文件，可用重定向覆写源文件.</p>
+</blockquote>
+<h4 id="sed操作命令"><a href="#sed操作命令" class="headerlink" title="sed操作命令"></a>sed操作命令</h4><h5 id="打印命令-p"><a href="#打印命令-p" class="headerlink" title="打印命令 p"></a>打印命令 <code>p</code></h5><p>打印命令p通常和-n选项配合</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 打印1~10行</div><div class="line">sed -n &apos;1,10p&apos; demo.txt</div><div class="line"></div><div class="line"># 打印非10行 </div><div class="line">sed -n &apos;10!p&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="插入命令-a-i"><a href="#插入命令-a-i" class="headerlink" title="插入命令 a/i"></a>插入命令 <code>a/i</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 第五行后插入hello</div><div class="line">sed -n &apos;5a hello&apos; demo.txt</div><div class="line"></div><div class="line"># 第五行前插入hello</div><div class="line">sed -n &apos;5i hello&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="替代-c"><a href="#替代-c" class="headerlink" title="替代 c"></a>替代 <code>c</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 第四行替换成hi</div><div class="line">sed -n &apos;4c hi&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="删除-d"><a href="#删除-d" class="headerlink" title="删除 d"></a>删除 <code>d</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 删除第十行</div><div class="line">sed -n &apos;10d&apos; demo.txt </div><div class="line"></div><div class="line"># 删除空行</div><div class="line">sed &apos;^&amp;d&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="替换-s"><a href="#替换-s" class="headerlink" title="替换 s"></a>替换 <code>s</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># false 替换成true</div><div class="line">sed &apos;s/false/true/g&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="执行多条命令-；"><a href="#执行多条命令-；" class="headerlink" title="执行多条命令 { ；}"></a>执行多条命令 <code>{ ；}</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 多条命令使用&#123;&#125;，命令间用分号分隔</div><div class="line">sed -n &apos;&#123;p;n;p&#125;&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="读取下一行到模式空间里去-n"><a href="#读取下一行到模式空间里去-n" class="headerlink" title="读取下一行到模式空间里去 n"></a>读取下一行到模式空间里去 <code>n</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># false 替换成true</div><div class="line">sed &apos;s/false/true/g&apos; demo.txt</div></pre></td></tr></table></figure>
+<blockquote>
+<p>h: 将当前模式空间的内容保存到保存空间<br>H：将当前模式空间中的内容追加到 保持空间<br>g : 将保持空间复制到模式空间<br>G: 将保持空间附加到模式空间<br>x：用于交换模式空间和保持空间中的内容</p>
+</blockquote>
+<h5 id="跳转-b"><a href="#跳转-b" class="headerlink" title="跳转 b"></a>跳转 <code>b</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 类似goto跳转</div><div class="line">sed -n &apos;h;n;H;x;s/\n/, /;/Paulo/!b Print; s/^/- /; :Print;p&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="创建分支-t"><a href="#创建分支-t" class="headerlink" title="创建分支 t"></a>创建分支 <code>t</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 创建分支;只有当前置条件成功的时候，t 命令才会跳转到该标签</div><div class="line">sed -n &apos;h;n;H;x; s/\n/, /; :Loop;/Paulo/s/^/-/; /----/!t Loop; p&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="替换字符-amp"><a href="#替换字符-amp" class="headerlink" title="替换字符 &amp;"></a>替换字符 <code>&amp;</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># &amp; 为匹配的字符</div><div class="line">sed &apos;s/w/&amp;123&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="大小写转化-u-U-l-L"><a href="#大小写转化-u-U-l-L" class="headerlink" title="大小写转化 \u \U \l \L"></a>大小写转化 <code>\u \U \l \L</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># &amp; 为匹配的字符</div><div class="line">sed &apos;s/w/\u&amp;123/&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="字符一对一转化-y"><a href="#字符一对一转化-y" class="headerlink" title="字符一对一转化 y"></a>字符一对一转化 <code>y</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># [address]y/inchars/outchars/ </div><div class="line"># inchars中的第一个字符会被转换为outchars中的第一个字符，第二个字符会被转换成outchars中的第二个字符</div><div class="line">$ echo &quot;1 5 15 20&quot; | sed &apos;y/151520/IVXVXX/&apos;</div></pre></td></tr></table></figure>
+<h5 id="显示隐藏字符命令-l"><a href="#显示隐藏字符命令-l" class="headerlink" title="显示隐藏字符命令 l"></a>显示隐藏字符命令 <code>l</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># [address1[,address2]]l [len] </div><div class="line"># 可显示 空格 tab，实现文本按照指定的宽度换行</div><div class="line">sed -n &apos;l 25&apos; books.txt</div></pre></td></tr></table></figure>
+<h5 id="真正匹配引用-x"><a href="#真正匹配引用-x" class="headerlink" title="真正匹配引用 \x"></a>真正匹配引用 <code>\x</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># () () () ...  \1 \2 \3 ...用\x表示前面的括号内容</div><div class="line"># 可显示 空格 tab，实现文本按照指定的宽度换行</div><div class="line">sed -r &apos;s/(^[a-z-_]+):x:([0-9]+):([0-9]+).*$/user:\1  uid:\2  gid:\3/&apos; /etc/passwd罗列出用户名 uid gid</div></pre></td></tr></table></figure>
+<h5 id="复制指定文件内容到匹配行-r"><a href="#复制指定文件内容到匹配行-r" class="headerlink" title="复制指定文件内容到匹配行 r"></a>复制指定文件内容到匹配行 <code>r</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 读取文件内容显示到指定行</div><div class="line">sed -n &apos;1r a.txt&apos; b.txt</div></pre></td></tr></table></figure>
+<h5 id="将匹配行写入到文件中-w"><a href="#将匹配行写入到文件中-w" class="headerlink" title="将匹配行写入到文件中 w"></a>将匹配行写入到文件中 <code>w</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 将demo.txt第一行写入到a.txt中</div><div class="line">sed -n &apos;1w a.txt&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="执行外部命令-e"><a href="#执行外部命令-e" class="headerlink" title="执行外部命令  e"></a>执行外部命令  <code>e</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># e 执行外部命令 比如 date</div><div class="line">sed &apos;3 e date&apos; books.txt</div></pre></td></tr></table></figure>
+<h5 id="排除命令"><a href="#排除命令" class="headerlink" title="排除命令  !"></a>排除命令  <code>!</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 匹配Paulo的行不打印</div><div class="line">sed -n &apos;/Paulo/!p&apos; books.txt</div></pre></td></tr></table></figure>
+<h5 id="输出行号"><a href="#输出行号" class="headerlink" title="输出行号  ="></a>输出行号  <code>=</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># [address1[,address2]]=</div><div class="line">sed &apos;=&apos; demo.txt</div></pre></td></tr></table></figure>
+<h5 id="退出sed-q"><a href="#退出sed-q" class="headerlink" title="退出sed  q"></a>退出sed  <code>q</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># 执行完第10行退出</div><div class="line">sed -n &apos;10q&apos; </div><div class="line"></div><div class="line"># q命令也支持提供一个value(作为程序的返回代码返回)</div><div class="line"></div><div class="line">sed &apos;/The Alchemist/ q 100&apos; books.txt</div><div class="line">echo $?</div></pre></td></tr></table></figure>
+<h5 id="多行命令-P-D-N"><a href="#多行命令-P-D-N" class="headerlink" title="多行命令  P,D,N"></a>多行命令  <code>P,D,N</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># N：将数据流中的下一行加进来创建一个多行组来处理,N并不会清除、输出模式空间的内容，而是采用了追加模式</div><div class="line">sed -n &apos;10q&apos; </div><div class="line"></div><div class="line"># D：删除多行组中的一行,只删除模式空间中的第一行。该命令会删除到换行符（含 换行符）为止的所有字符</div><div class="line"></div><div class="line"># P：打印多行组中的一行</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/mylxsw/growing-up/blob/master/doc/%E4%B8%89%E5%8D%81%E5%88%86%E9%92%9F%E5%AD%A6%E4%BC%9ASED.md" target="_blank" rel="external">参考：三十分钟学会SED</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/wechat_reward.png" alt="ccrsky WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/alipay_reward.png" alt="ccrsky Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/21/UTF-8-without-BOM/" rel="next" title="UTF-8 without BOM">
+                <i class="fa fa-chevron-left"></i> UTF-8 without BOM
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/15/Handlebars模板使用/" rel="prev" title="Handlebars模板使用">
+                Handlebars模板使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/04/26/sed常用操作命令/"
+           data-title="sed常用操作命令" data-url="https://ccrsky.github.io/2017/04/26/sed常用操作命令/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avator.jpg"
+               alt="ccrsky" />
+          <p class="site-author-name" itemprop="name">ccrsky</p>
+           
+              <p class="site-description motion-element" itemprop="description">聚沙成塔，集腋成裘</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ccrsky" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/cheng-chen-95-36" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/2464455840" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#SED命令"><span class="nav-number">1.</span> <span class="nav-text">SED命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原理"><span class="nav-number">2.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用途"><span class="nav-number">3.</span> <span class="nav-text">用途</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令格式"><span class="nav-number">4.</span> <span class="nav-text">命令格式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#行寻址两种形式："><span class="nav-number">4.1.</span> <span class="nav-text">行寻址两种形式：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#操作符"><span class="nav-number">4.2.</span> <span class="nav-text">操作符 + , ~</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sed操作命令"><span class="nav-number">5.</span> <span class="nav-text">sed操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#打印命令-p"><span class="nav-number">5.1.</span> <span class="nav-text">打印命令 p</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#插入命令-a-i"><span class="nav-number">5.2.</span> <span class="nav-text">插入命令 a/i</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#替代-c"><span class="nav-number">5.3.</span> <span class="nav-text">替代 c</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#删除-d"><span class="nav-number">5.4.</span> <span class="nav-text">删除 d</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#替换-s"><span class="nav-number">5.5.</span> <span class="nav-text">替换 s</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#执行多条命令-；"><span class="nav-number">5.6.</span> <span class="nav-text">执行多条命令 { ；}</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#读取下一行到模式空间里去-n"><span class="nav-number">5.7.</span> <span class="nav-text">读取下一行到模式空间里去 n</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#跳转-b"><span class="nav-number">5.8.</span> <span class="nav-text">跳转 b</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建分支-t"><span class="nav-number">5.9.</span> <span class="nav-text">创建分支 t</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#替换字符-amp"><span class="nav-number">5.10.</span> <span class="nav-text">替换字符 &</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#大小写转化-u-U-l-L"><span class="nav-number">5.11.</span> <span class="nav-text">大小写转化 \u \U \l \L</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#字符一对一转化-y"><span class="nav-number">5.12.</span> <span class="nav-text">字符一对一转化 y</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#显示隐藏字符命令-l"><span class="nav-number">5.13.</span> <span class="nav-text">显示隐藏字符命令 l</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#真正匹配引用-x"><span class="nav-number">5.14.</span> <span class="nav-text">真正匹配引用 \x</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#复制指定文件内容到匹配行-r"><span class="nav-number">5.15.</span> <span class="nav-text">复制指定文件内容到匹配行 r</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#将匹配行写入到文件中-w"><span class="nav-number">5.16.</span> <span class="nav-text">将匹配行写入到文件中 w</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#执行外部命令-e"><span class="nav-number">5.17.</span> <span class="nav-text">执行外部命令  e</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#排除命令"><span class="nav-number">5.18.</span> <span class="nav-text">排除命令  !</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#输出行号"><span class="nav-number">5.19.</span> <span class="nav-text">输出行号  =</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#退出sed-q"><span class="nav-number">5.20.</span> <span class="nav-text">退出sed  q</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多行命令-P-D-N"><span class="nav-number">5.21.</span> <span class="nav-text">多行命令  P,D,N</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ccrsky</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"ccrsky"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
