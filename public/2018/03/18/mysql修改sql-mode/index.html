@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="数据库,mysql," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="通常我们会在Hexo文章中插入媒体资源如图片，音频，视频，那么让我们来看看如何插入 插入图片本地图片在/hexo/source目录下新建文件夹，命名为images或其他 1![图片描述](/images/图片名字.png) 使用远程图片这种是大家常用的方法1![图片描述](http://ouonaooa5.bkt.clouddn.com/demo.jpg)  可使用七牛存储自己的图片资源  插入音">
-<meta name="keywords" content="hexo">
+<meta name="description" content="起因使用node ORM sequelizejs进行聚合查询，出现了一下报错，最终发现是sql_mode中的“ONLY_FULL_GROUP_BY”导致的。 1Error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column &apos;user.id&apos;; this">
+<meta name="keywords" content="数据库,mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo插入媒体资源">
-<meta property="og:url" content="https://ccrsky.github.io/2017/08/15/Hexo插入媒体资源/index.html">
+<meta property="og:title" content="mysql修改sql_mode">
+<meta property="og:url" content="https://ccrsky.github.io/2018/03/18/mysql修改sql-mode/index.html">
 <meta property="og:site_name" content="ccrsky">
-<meta property="og:description" content="通常我们会在Hexo文章中插入媒体资源如图片，音频，视频，那么让我们来看看如何插入 插入图片本地图片在/hexo/source目录下新建文件夹，命名为images或其他 1![图片描述](/images/图片名字.png) 使用远程图片这种是大家常用的方法1![图片描述](http://ouonaooa5.bkt.clouddn.com/demo.jpg)  可使用七牛存储自己的图片资源  插入音">
+<meta property="og:description" content="起因使用node ORM sequelizejs进行聚合查询，出现了一下报错，最终发现是sql_mode中的“ONLY_FULL_GROUP_BY”导致的。 1Error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column &apos;user.id&apos;; this">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T07:29:27.197Z">
+<meta property="og:updated_time" content="2018-03-18T09:12:03.297Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo插入媒体资源">
-<meta name="twitter:description" content="通常我们会在Hexo文章中插入媒体资源如图片，音频，视频，那么让我们来看看如何插入 插入图片本地图片在/hexo/source目录下新建文件夹，命名为images或其他 1![图片描述](/images/图片名字.png) 使用远程图片这种是大家常用的方法1![图片描述](http://ouonaooa5.bkt.clouddn.com/demo.jpg)  可使用七牛存储自己的图片资源  插入音">
+<meta name="twitter:title" content="mysql修改sql_mode">
+<meta name="twitter:description" content="起因使用node ORM sequelizejs进行聚合查询，出现了一下报错，最终发现是sql_mode中的“ONLY_FULL_GROUP_BY”导致的。 1Error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column &apos;user.id&apos;; this">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://ccrsky.github.io/2017/08/15/Hexo插入媒体资源/"/>
+  <link rel="canonical" href="https://ccrsky.github.io/2018/03/18/mysql修改sql-mode/"/>
 
 
 
 
 
-  <title>Hexo插入媒体资源 | ccrsky</title>
+  <title>mysql修改sql_mode | ccrsky</title>
   
 
 
@@ -235,7 +235,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/08/15/Hexo插入媒体资源/">
+    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2018/03/18/mysql修改sql-mode/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ccrsky">
@@ -252,7 +252,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hexo插入媒体资源</h2>
+          <h2 class="post-title" itemprop="name headline">mysql修改sql_mode</h2>
         
 
         <div class="post-meta">
@@ -264,8 +264,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-15T00:59:44+08:00">
-                2017-08-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-18T16:49:34+08:00">
+                2018-03-18
               </time>
             
 
@@ -274,6 +274,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -302,28 +324,41 @@
       
 
       
-        <p>通常我们会在Hexo文章中插入媒体资源如图片，音频，视频，那么让我们来看看如何插入</p>
-<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><h4 id="本地图片"><a href="#本地图片" class="headerlink" title="本地图片"></a>本地图片</h4><p>在/hexo/source目录下新建文件夹，命名为images或其他</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片描述</span>](<span class="link">/images/图片名字.png</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="使用远程图片"><a href="#使用远程图片" class="headerlink" title="使用远程图片"></a>使用远程图片</h4><p>这种是大家常用的方法<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片描述</span>](<span class="link">http://ouonaooa5.bkt.clouddn.com/demo.jpg</span>)</span><br></pre></td></tr></table></figure></p>
+        <h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>使用node ORM <code>sequelizejs</code>进行聚合查询，出现了一下报错，最终发现是sql_mode中的“ONLY_FULL_GROUP_BY”导致的。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'user.id'; this is incompatible with sql_mode=only_full_group_by</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>可使用七牛存储自己的图片资源</p>
+<p>mac 下安装mysql默认开启了”ONLY_FULL_GROUP_BY”模式，可通过 select @@sql_mode查看。</p>
 </blockquote>
-<h3 id="插入音频"><a href="#插入音频" class="headerlink" title="插入音频"></a>插入音频</h3><h4 id="插入网易云音乐"><a href="#插入网易云音乐" class="headerlink" title="插入网易云音乐"></a>插入网易云音乐</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">86</span>   </span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66"</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=25706282&auto=0&height=66"><br></iframe> 
-
-
-<h4 id="插入喜马拉雅"><a href="#插入喜马拉雅" class="headerlink" title="插入喜马拉雅"></a>插入喜马拉雅</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">height</span>=<span class="string">"36"</span> <span class="attr">width</span>=<span class="string">"260"</span> <span class="attr">src</span>=<span class="string">"//www.ximalaya.com/swf/sound/red.swf?id=36371956"</span> <span class="attr">frameborder</span>=<span class="string">0</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<object type="application/x-shockwave-flash" id="ximalaya_player" data="//www.ximalaya.com/swf/sound/red.swf?id=36371956" width="260" height="36"></object>
-
-
-<h3 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">class</span>=<span class="string">"ql-video ql-align-center"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span> <span class="attr">src</span>=<span class="string">"https://www.youtube.com/embed/QHH3iSeDBLo?showinfo=0"</span> <span class="attr">height</span>=<span class="string">"238"</span> <span class="attr">width</span>=<span class="string">"560"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe class="ql-video ql-align-center" frameborder="0" allowfullscreen="true" src="https://www.youtube.com/embed/QHH3iSeDBLo?showinfo=0" height="238" width="560"></iframe>
-
-
-
-
-
+<h3 id="sql-mode配置项"><a href="#sql-mode配置项" class="headerlink" title="sql_mode配置项"></a>sql_mode配置项</h3><p>几种常见的mode项</p>
+<ul>
+<li><p>ONLY_FULL_GROUP_BY：出现在select语句、HAVING条件和ORDER BY语句中的列，必须是GROUP BY的列或者依赖于GROUP BY列的函数列。</p>
+</li>
+<li><p>NO_AUTO_VALUE_ON_ZERO：该值影响自增长列的插入。默认设置下，插入0或NULL代表生成下一个自增长值。如果用户希望插入的值为0，而该列又是自增长的，那么这个选项就有用了。</p>
+</li>
+<li><p>STRICT_TRANS_TABLES：在该模式下，如果一个值不能插入到一个事务表中，则中断当前的操作，对非事务表不做限制</p>
+</li>
+<li><p>NO_ZERO_IN_DATE：这个模式影响了是否允许日期中的月份和日包含0。如果开启此模式，2016-01-00是不允许的，但是0000-02-01是允许的。它实际的行为受到 strict mode是否开启的影响1。</p>
+</li>
+<li><p>NO_ZERO_DATE：设置该值，mysql数据库不允许插入零日期。它实际的行为受到 strictmode是否开启的影响2。</p>
+</li>
+<li><p>ERROR_FOR_DIVISION_BY_ZERO：在INSERT或UPDATE过程中，如果数据被零除，则产生错误而非警告。如果未给出该模式，那么数据被零除时MySQL返回NULL</p>
+</li>
+<li><p>NO_AUTO_CREATE_USER：禁止GRANT创建密码为空的用户</p>
+</li>
+<li><p>NO_ENGINE_SUBSTITUTION：如果需要的存储引擎被禁用或未编译，那么抛出错误。不设置此值时，用默认的存储引擎替代，并抛出一个异常</p>
+</li>
+<li><p>PIPES_AS_CONCAT：将”||”视为字符串的连接操作符而非或运算符，这和Oracle数据库是一样的，也和字符串的拼接函数Concat相类似</p>
+</li>
+<li><p>ANSI_QUOTES：启用ANSI_QUOTES后，不能用双引号来引用字符串，因为它被解释为识别符</p>
+</li>
+</ul>
+<h3 id="修改mysql配置"><a href="#修改mysql配置" class="headerlink" title="修改mysql配置"></a>修改mysql配置</h3><p>1.全局修改</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 查看全局sql_mode</span><br><span class="line"><span class="keyword">SELECT</span> @@global.sql_mode; 可以查看全局sql_mode的值</span><br><span class="line"></span><br><span class="line"># 设置sql_mode</span><br><span class="line"><span class="keyword">SET</span> @@global.sql_mode=<span class="string">"modes"</span>;</span><br></pre></td></tr></table></figure>
+<p>2.会话修改</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 查看会话sql_mode</span><br><span class="line"><span class="keyword">SELECT</span> @@SESSION.sql_mode; 可以查看全局sql_mode的值</span><br><span class="line"># 设置sql_mode</span><br><span class="line"><span class="keyword">SET</span> @@SESSION.sql_mode=<span class="string">"modes"</span>;</span><br></pre></td></tr></table></figure>
+<p>3.配置文件修改（推荐）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">sql_mode = &quot;STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION&quot;</span><br></pre></td></tr></table></figure>
+<p><a href="https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sql-mode-setting" target="_blank" rel="noopener">更多参考官网</a></p>
 
       
     </div>
@@ -370,7 +405,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/数据库/" rel="tag"># 数据库</a>
+          
+            <a href="/tags/mysql/" rel="tag"># mysql</a>
           
         </div>
       
@@ -383,8 +420,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/15/Handlebars模板使用/" rel="next" title="Handlebars模板使用">
-                <i class="fa fa-chevron-left"></i> Handlebars模板使用
+              <a href="/2018/02/26/mysql配置文件/" rel="next" title="mysql配置文件">
+                <i class="fa fa-chevron-left"></i> mysql配置文件
               </a>
             
           </div>
@@ -392,10 +429,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/17/next/" rel="prev" title="next快速入门">
-                next快速入门 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -560,7 +593,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#插入图片"><span class="nav-number">1.</span> <span class="nav-text">插入图片</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本地图片"><span class="nav-number">1.1.</span> <span class="nav-text">本地图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用远程图片"><span class="nav-number">1.2.</span> <span class="nav-text">使用远程图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入音频"><span class="nav-number">2.</span> <span class="nav-text">插入音频</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#插入网易云音乐"><span class="nav-number">2.1.</span> <span class="nav-text">插入网易云音乐</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#插入喜马拉雅"><span class="nav-number">2.2.</span> <span class="nav-text">插入喜马拉雅</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入视频"><span class="nav-number">3.</span> <span class="nav-text">插入视频</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#起因"><span class="nav-number">1.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sql-mode配置项"><span class="nav-number">2.</span> <span class="nav-text">sql_mode配置项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改mysql配置"><span class="nav-number">3.</span> <span class="nav-text">修改mysql配置</span></a></li></ol></div>
             
 
           </div>

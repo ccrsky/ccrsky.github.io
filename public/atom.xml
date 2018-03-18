@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2018-02-26T12:08:19.039Z</updated>
+  <updated>2018-03-18T09:12:03.297Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>mysql修改sql_mode</title>
+    <link href="https://ccrsky.github.io/2018/03/18/mysql%E4%BF%AE%E6%94%B9sql-mode/"/>
+    <id>https://ccrsky.github.io/2018/03/18/mysql修改sql-mode/</id>
+    <published>2018-03-18T08:49:34.000Z</published>
+    <updated>2018-03-18T09:12:03.297Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h3&gt;&lt;p&gt;使用node ORM &lt;code&gt;sequelizejs&lt;/code&gt;进行聚合查询，出现了一下报错，最终发现是sql_mode中的“ONLY
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://ccrsky.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="https://ccrsky.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="mysql" scheme="https://ccrsky.github.io/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mysql配置文件</title>
     <link href="https://ccrsky.github.io/2018/02/26/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     <id>https://ccrsky.github.io/2018/02/26/mysql配置文件/</id>
     <published>2018-02-26T12:02:12.000Z</published>
-    <updated>2018-02-26T12:08:19.039Z</updated>
+    <updated>2018-03-18T08:50:20.917Z</updated>
     
     <summary type="html">
     
@@ -36,6 +61,8 @@
     
     
       <category term="数据库" scheme="https://ccrsky.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="mysql" scheme="https://ccrsky.github.io/tags/mysql/"/>
     
   </entry>
   
