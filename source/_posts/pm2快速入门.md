@@ -362,6 +362,227 @@ pm2 start process.json --env production
 
 
 #### 配置参数列表
+配置参数列表
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Field</th>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: center">Example</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">name</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">“my-api”</td>
+      <td style="text-align: left">application name (default to script filename without extension)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">script</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">”./api/app.js”</td>
+      <td style="text-align: left">script path relative to pm2 start</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cwd</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">“/var/www/”</td>
+      <td style="text-align: left">the directory from which your app will be launched</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">args</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">“-a 13 -b 12”</td>
+      <td style="text-align: left">string containing all arguments passed via CLI to script</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">interpreter</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">“/usr/bin/python”</td>
+      <td style="text-align: left">interpreter absolute path (default to node)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">interpreter_args</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">”–harmony”</td>
+      <td style="text-align: left">option to pass to the interpreter</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">node_args</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: left">alias to interpreter_args</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">instances</td>
+      <td style="text-align: center">number</td>
+      <td style="text-align: center">-1</td>
+      <td style="text-align: left">number of app instance to be launched</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">exec_mode</td>
+      <td style="text-align: center">string</td>
+      <td style="text-align: center">“cluster”</td>
+      <td style="text-align: left">mode to start your app, can be “cluster” or “fork”, default fork</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">watch</td>
+      <td style="text-align: center">boolean or []</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: left">enable watch &amp; restart feature, if a file change in the folder or subfolder, your app will get reloaded</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ignore_watch</td>
+      <td style="text-align: center">list</td>
+      <td style="text-align: center">[”[\/\\]\./”, “node_modules”]</td>
+      <td style="text-align: left">list of regex to ignore some file or folder names by the watch feature</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">max_memory_restart</td>
+      <td style="text-align: center">string</td>
+      <td style="text-align: center">“150M”</td>
+      <td style="text-align: left">your app will be restarted if it exceeds the amount of memory specified. human-friendly format : it can be “10M”, “100K”, “2G” and so on…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">env</td>
+      <td style="text-align: center">object</td>
+      <td style="text-align: center">{“NODE_ENV”: “development”, “ID”: “42”}</td>
+      <td style="text-align: left">env variables which will appear in your app</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">env_<env_name></env_name></td>
+      <td style="text-align: center">object</td>
+      <td style="text-align: center">{“NODE_ENV”: “production”, “ID”: “89”}</td>
+      <td style="text-align: left">inject <env_name> when doing pm2 restart app.yml --env <env_name></env_name></env_name></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">source_map_support</td>
+      <td style="text-align: center">boolean</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: left">default to true, [enable/disable source map file]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">instance_var</td>
+      <td style="text-align: center">string</td>
+      <td style="text-align: center">“NODE_APP_INSTANCE”</td>
+      <td style="text-align: left"><a href="http://pm2.keymetrics.io/docs/usage/environment/#specific-environment-variables">see documentation</a></td>
+    </tr>
+  </tbody>
+  
+  <tbody>
+    <tr>
+      <td style="text-align: left">log_date_format</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">“YYYY-MM-DD HH:mm Z”</td>
+      <td style="text-align: left">log date format (see log section)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">error_file</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: left">error file path (default to $HOME/.pm2/logs/XXXerr.log)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">out_file</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: left">output file path (default to $HOME/.pm2/logs/XXXout.log)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">combine_logs</td>
+      <td style="text-align: center">boolean</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: left">if set to true, avoid to suffix logs file with the process id</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">merge_logs</td>
+      <td style="text-align: center">boolean</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: left">alias to combine_logs</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">pid_file</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: left">pid file path (default to $HOME/.pm2/pid/app-pm_id.pid)</td>
+    </tr>
+  </tbody>
+  
+  <tbody>
+    <tr>
+      <td style="text-align: left">min_uptime</td>
+      <td style="text-align: center">(string)</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: left">min uptime of the app to be considered started</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">listen_timeout</td>
+      <td style="text-align: center">number</td>
+      <td style="text-align: center">8000</td>
+      <td style="text-align: left">time in ms before forcing a reload if app not listening</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">kill_timeout</td>
+      <td style="text-align: center">number</td>
+      <td style="text-align: center">1600</td>
+      <td style="text-align: left">time in milliseconds before sending <a href="http://pm2.keymetrics.io/docs/usage/signals-clean-restart/#cleaning-states-and-jobs">a final SIGKILL</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">wait_ready</td>
+      <td style="text-align: center">boolean</td>
+      <td style="text-align: center">false</td>
+      <td style="text-align: left">Instead of reload waiting for listen event, wait for process.send(‘ready’)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">max_restarts</td>
+      <td style="text-align: center">number</td>
+      <td style="text-align: center">10</td>
+      <td style="text-align: left">number of consecutive unstable restarts (less than 1sec interval or custom time via min_uptime) before your app is considered errored and stop being restarted</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">restart_delay</td>
+      <td style="text-align: center">number</td>
+      <td style="text-align: center">4000</td>
+      <td style="text-align: left">time to wait before restarting a crashed app (in milliseconds). defaults to 0.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">autorestart</td>
+      <td style="text-align: center">boolean</td>
+      <td style="text-align: center">false</td>
+      <td style="text-align: left">true by default. if false, PM2 will not restart your app if it crashes or ends peacefully</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cron_restart</td>
+      <td style="text-align: center">string</td>
+      <td style="text-align: center">“1 0 * * *”</td>
+      <td style="text-align: left">a cron pattern to restart your app. Application must be running for cron feature to work</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">vizion</td>
+      <td style="text-align: center">boolean</td>
+      <td style="text-align: center">false</td>
+      <td style="text-align: left">true by default. if false, PM2 will start without vizion features (versioning control metadatas)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">post_update</td>
+      <td style="text-align: center">list</td>
+      <td style="text-align: center">[“npm install”, “echo launching the app”]</td>
+      <td style="text-align: left">a list of commands which will be executed after you perform a Pull/Upgrade operation from Keymetrics dashboard</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">force</td>
+      <td style="text-align: center">boolean</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: left">defaults to false. if true, you can start the same script several times which is usually not allowed by PM2</td>
+    </tr>
+  </tbody>
+  
+</table>
 
 
 >使用json配置文件的方式，命令行可选参数会无效
