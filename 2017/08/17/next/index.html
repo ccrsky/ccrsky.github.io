@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 
 
@@ -10,19 +10,11 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-
 
 
 
@@ -45,27 +37,38 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/favicon.ico?v=5.1.4" color="#222">
-
-
-
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="js," />
@@ -79,20 +82,47 @@
 
 
 
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
-<meta name="description" content="Next是react服务端渲染框架。 特点 默认服务端渲染 自动切分代码 基于webpack开发，支持HMR 可以集成Express或其他Node server 可以自定义Babel和Webpack配置  快速入门初始化项目123456mkdir hello-nextcd hello-nextnpm init -ynpm install --save react react-dom next# p">
-<meta name="keywords" content="js">
+
+
+
+
+<meta name="description" content="NextNext是react服务端渲染框架。
+特点
+默认服务端渲染
+自动切分代码
+基于webpack开发，支持HMR
+可以集成Express或其他Node server
+可以自定义Babel和Webpack配置
+
+快速入门初始化项目123456mkdir hello-nextcd hello-nextnpm init -ynpm install --save react react-dom nex">
 <meta property="og:type" content="article">
 <meta property="og:title" content="next快速入门">
 <meta property="og:url" content="https://ccrsky.github.io/2017/08/17/next/index.html">
 <meta property="og:site_name" content="ccrsky">
-<meta property="og:description" content="Next是react服务端渲染框架。 特点 默认服务端渲染 自动切分代码 基于webpack开发，支持HMR 可以集成Express或其他Node server 可以自定义Babel和Webpack配置  快速入门初始化项目123456mkdir hello-nextcd hello-nextnpm init -ynpm install --save react react-dom next# p">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-31T12:51:24.284Z">
+<meta property="og:description" content="NextNext是react服务端渲染框架。
+特点
+默认服务端渲染
+自动切分代码
+基于webpack开发，支持HMR
+可以集成Express或其他Node server
+可以自定义Babel和Webpack配置
+
+快速入门初始化项目123456mkdir hello-nextcd hello-nextnpm init -ynpm install --save react react-dom nex">
+<meta property="og:updated_time" content="2017-08-17T12:21:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="next快速入门">
-<meta name="twitter:description" content="Next是react服务端渲染框架。 特点 默认服务端渲染 自动切分代码 基于webpack开发，支持HMR 可以集成Express或其他Node server 可以自定义Babel和Webpack配置  快速入门初始化项目123456mkdir hello-nextcd hello-nextnpm init -ynpm install --save react react-dom next# p">
+<meta name="twitter:description" content="NextNext是react服务端渲染框架。
+特点
+默认服务端渲染
+自动切分代码
+基于webpack开发，支持HMR
+可以集成Express或其他Node server
+可以自定义Babel和Webpack配置
+
+快速入门初始化项目123456mkdir hello-nextcd hello-nextnpm init -ynpm install --save react react-dom nex">
 
 
 
@@ -101,11 +131,9 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: true,
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -128,26 +156,42 @@
 
 
 
-  <title>next快速入门 | ccrsky</title>
+  <title> next快速入门 | ccrsky </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
   
 
 
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3fd6baa6e8f699e13645d9df8d7b9dea";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
-</head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+
+
+
+
 
   
   
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -163,7 +207,7 @@
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description"></h1>
+        <p class="site-subtitle"></p>
       
   </div>
 
@@ -193,12 +237,32 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
           </a>
         </li>
       
@@ -230,11 +294,7 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/08/17/next/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -252,7 +312,14 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">next快速入门</h2>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                next快速入门
+              
+            
+          </h1>
         
 
         <div class="post-meta">
@@ -300,6 +367,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/08/17/next/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/08/17/next/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -315,16 +392,14 @@
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <p>Next是react服务端渲染框架。</p>
+        <h2 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h2><p>Next是react服务端渲染框架。</p>
 <h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
 <li>默认服务端渲染</li>
 <li>自动切分代码</li>
@@ -332,144 +407,149 @@
 <li>可以集成Express或其他Node server</li>
 <li>可以自定义Babel和Webpack配置</li>
 </ul>
-<h3 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h3><h4 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir hello-next</span><br><span class="line"><span class="built_in">cd</span> hello-next</span><br><span class="line">npm init -y</span><br><span class="line">npm install --save react react-dom next</span><br><span class="line"><span class="comment"># pages是页面路由目录，必须有，路由默认是基于该目录下的文件</span></span><br><span class="line">mkdir pages</span><br></pre></td></tr></table></figure>
+<h3 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h3><h4 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">mkdir hello-next</div><div class="line"><span class="built_in">cd</span> hello-next</div><div class="line">npm init -y</div><div class="line">npm install --save react react-dom next</div><div class="line"><span class="comment"># pages是页面路由目录，必须有，路由默认是基于该目录下的文件</span></div><div class="line">mkdir pages</div></pre></td></tr></table></figure>
 <p>npm script 添加如下代码</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"dev"</span>: <span class="string">"next"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// npm run dev 即可运行开发服务器 http://localhost:3000</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"dev"</span>: <span class="string">"next"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// npm run dev 即可运行开发服务器 http://localhost:3000</span></div></pre></td></tr></table></figure>
 <p>目前没有路由，访问会出现404页面，接下来添加路由。</p>
 <h4 id="添加路由"><a href="#添加路由" class="headerlink" title="添加路由"></a>添加路由</h4><p>在pages目录下添加index.js(pages/index.js),内容如下：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Index = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;p&gt;Hello Next.js&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Index</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> Index = <span class="function"><span class="params">()</span> =&gt;</span> (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello Next.js<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">)</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> Index</div></pre></td></tr></table></figure>
 <blockquote>
 <p>React组件要 <strong>默认</strong> 导出；默认情况下<code>pages</code>为路由目录，<code>static</code>为静态文件目录。</p>
 </blockquote>
 <h4 id="页面导航"><a href="#页面导航" class="headerlink" title="页面导航"></a>页面导航</h4><p>添加about页面</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;p&gt;This is the about page&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>This is the about page<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">)</div></pre></td></tr></table></figure>
 <p>通过 <code>a</code> 标签可以很容易做到页面跳转，但那是通过服务端导航，不是我们想要的，我们可以通过 <code>next/link</code>支持客户端导航。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Index = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;Link href=<span class="string">"/about"</span>&gt;</span><br><span class="line">      &lt;a&gt;About Page&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>Link&gt;</span><br><span class="line">    &lt;p&gt;Hello Next.js&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Index</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> Index = <span class="function"><span class="params">()</span> =&gt;</span> (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">Link</span> <span class="attr">href</span>=<span class="string">"/about"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">a</span>&gt;</span>About Page<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">Link</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello Next.js<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">)</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> Index</div></pre></td></tr></table></figure>
 <p>或者</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 包裹按钮</span></span><br><span class="line">&lt;Link href=<span class="string">"/about"</span>&gt;</span><br><span class="line">  &lt;button&gt;Go to About Page&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>Link&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 包裹按钮</span></div><div class="line">&lt;Link href=<span class="string">"/about"</span>&gt;</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">button</span>&gt;</span>Go to About Page<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></div><div class="line">&lt;<span class="regexp">/Link&gt;</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>Link组件包裹a标签，处理页面跳转，无论是a，button还是其他组件(比如div)，只要Link子组件接收onClick属性，都可以跳转。</p>
 </blockquote>
 <p>链接添加样式</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 生效</span></span><br><span class="line">&lt;Link href=<span class="string">"/about"</span>&gt;</span><br><span class="line">  &lt;a style=&#123;&#123; <span class="attr">fontSize</span>: <span class="number">20</span> &#125;&#125;&gt;About Page&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>Link&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 不生效</span></span><br><span class="line">&lt;Link href=<span class="string">"/about"</span> style=&#123;&#123; <span class="attr">fontSize</span>: <span class="number">20</span> &#125;&#125;&gt;</span><br><span class="line">  &lt;a&gt;About Page&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>Link&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// 生效</div><div class="line">&lt;Link href="/about"&gt;</div><div class="line">  &lt;a style=&#123;&#123; fontSize: 20 &#125;&#125;&gt;About Page&lt;/a&gt;</div><div class="line">&lt;/Link&gt;</div><div class="line"></div><div class="line">// 不生效</div><div class="line">&lt;Link href="/about" style=&#123;&#123; fontSize: 20 &#125;&#125;&gt;</div><div class="line">  &lt;a&gt;About Page&lt;/a&gt;</div><div class="line">&lt;/Link&gt;</div></pre></td></tr></table></figure>
 <blockquote>
 <p>Link是高阶组件，直接收 href等一些其他属性，不支持style。</p>
 </blockquote>
 <h4 id="共享组件"><a href="#共享组件" class="headerlink" title="共享组件"></a>共享组件</h4><p>多个页面经常会有公用部分（比如Head），我们可以新建<code>components/Header.js</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> linkStyle = &#123;</span><br><span class="line">  marginRight: <span class="number">15</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Header = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;Link href=<span class="string">"/"</span>&gt;</span><br><span class="line">          &lt;a style=&#123;linkStyle&#125;&gt;Home&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">        &lt;/</span>Link&gt;</span><br><span class="line">        &lt;Link href=<span class="string">"/about"</span>&gt;</span><br><span class="line">          &lt;a style=&#123;linkStyle&#125;&gt;About&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">        &lt;/</span>Link&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp">export default Header</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> linkStyle = &#123;</div><div class="line">  <span class="attr">marginRight</span>: <span class="number">15</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> Header = <span class="function"><span class="params">()</span> =&gt;</span> (</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">Link</span> <span class="attr">href</span>=<span class="string">"/"</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">a</span> <span class="attr">style</span>=<span class="string">&#123;linkStyle&#125;</span>&gt;</span>Home<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">Link</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">Link</span> <span class="attr">href</span>=<span class="string">"/about"</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">a</span> <span class="attr">style</span>=<span class="string">&#123;linkStyle&#125;</span>&gt;</span>About<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">Link</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">)</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> Header</div></pre></td></tr></table></figure>
 <p>在首页中导入<code>Head</code>组件</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Header <span class="keyword">from</span> <span class="string">'../components/Header'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;Header /&gt;</span><br><span class="line">    &lt;p&gt;Hello Next.js&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Header <span class="keyword">from</span> <span class="string">'../components/Header'</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">Header</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello Next.js<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">)</div></pre></td></tr></table></figure>
 <blockquote>
 <p>组件可以放在任何目录中，除了 <strong>pages</strong> 目录，pages下的文件跟服务端路由相关。</p>
 </blockquote>
 <h4 id="Layout组件"><a href="#Layout组件" class="headerlink" title="Layout组件"></a>Layout组件</h4><p>可以将整个页面框架做成layout组件(components/MyLayout.js)，各个页面复用</p>
 <p>Layout组件</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Header <span class="keyword">from</span> <span class="string">'./Header'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> layoutStyle = &#123;</span><br><span class="line">  margin: <span class="number">20</span>,</span><br><span class="line">  padding: <span class="number">20</span>,</span><br><span class="line">  border: <span class="string">'1px solid #DDD'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Layout = <span class="function">(<span class="params">props</span>) =&gt;</span> (</span><br><span class="line">  &lt;div style=&#123;layoutStyle&#125;&gt;</span><br><span class="line">    &lt;Header /&gt;</span><br><span class="line">    &#123;props.children&#125;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default Layout</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Header <span class="keyword">from</span> <span class="string">'./Header'</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> layoutStyle = &#123;</div><div class="line">  <span class="attr">margin</span>: <span class="number">20</span>,</div><div class="line">  <span class="attr">padding</span>: <span class="number">20</span>,</div><div class="line">  <span class="attr">border</span>: <span class="string">'1px solid #DDD'</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> Layout = <span class="function">(<span class="params">props</span>) =&gt;</span> (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&#123;layoutStyle&#125;</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">Header</span> /&gt;</span></div><div class="line">    &#123;props.children&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">)</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> Layout</div></pre></td></tr></table></figure>
 <p>index页面</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// pages/index.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</span><br><span class="line">    &lt;Layout&gt;</span><br><span class="line">       &lt;p&gt;Hello Next.js&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>Layout&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// pages/index.js</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">Layout</span>&gt;</span></span></div><div class="line">       <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello Next.js<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">Layout</span>&gt;</span></div><div class="line">)</div></pre></td></tr></table></figure>
 <p>about页面</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">pages/about.js</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</span><br><span class="line">    &lt;Layout&gt;</span><br><span class="line">       &lt;p&gt;about&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>Layout&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">pages/about.js</div><div class="line"></div><div class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">Layout</span>&gt;</span></span></div><div class="line">       <span class="tag">&lt;<span class="name">p</span>&gt;</span>about<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">Layout</span>&gt;</span></div><div class="line">)</div></pre></td></tr></table></figure>
 <p>layout除了使用<code>{props.children}</code>还可以使用属性传值,高级组件的方式。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> withLayout <span class="keyword">from</span> <span class="string">'../lib/layout'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Page = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;p&gt;This is the about page&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp">export default withLayout(Page)</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// pages/index.js</span></span><br><span class="line"><span class="keyword">const</span> Page = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;p&gt;This is the about page&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default () =&gt; (&lt;Layout page=&#123;Page&#125;/</span>&gt;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> withLayout <span class="keyword">from</span> <span class="string">'../lib/layout'</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> Page = <span class="function"><span class="params">()</span> =&gt;</span> (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is the about page<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></div><div class="line">)</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> withLayout(Page)</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// pages/index.js</span></div><div class="line"><span class="keyword">const</span> Page = <span class="function"><span class="params">()</span> =&gt;</span> (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is the about page<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></div><div class="line">)</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (<span class="xml"><span class="tag">&lt;<span class="name">Layout</span> <span class="attr">page</span>=<span class="string">&#123;Page&#125;/</span>&gt;</span>)</span></div></pre></td></tr></table></figure>
 <h4 id="动态页面"><a href="#动态页面" class="headerlink" title="动态页面"></a>动态页面</h4><p>前边我们实现了静态页面，现在我们通过 query string 实现动态页面。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// pages/index.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></span><br><span class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> PostLink = <span class="function">(<span class="params">props</span>) =&gt;</span> (</span><br><span class="line">  &lt;li&gt;</span><br><span class="line">    &lt;Link href=&#123;<span class="string">`/post?title=<span class="subst">$&#123;props.title&#125;</span>`</span>&#125;&gt;</span><br><span class="line">      &lt;a&gt;&#123;props.title&#125;&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>Link&gt;</span><br><span class="line">  &lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ 通过Link组件href属性向下一个页面传参</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default () =&gt; (</span></span><br><span class="line"><span class="regexp">  &lt;Layout&gt;</span></span><br><span class="line"><span class="regexp">    &lt;h1&gt;My Blog&lt;/</span>h1&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">      &lt;PostLink title=<span class="string">"Hello Next.js"</span>/&gt;</span><br><span class="line">      &lt;PostLink title=<span class="string">"Learn Next.js is awesome"</span>/&gt;</span><br><span class="line">      &lt;PostLink title=<span class="string">"Deploy apps with Zeit"</span>/&gt;</span><br><span class="line">    &lt;<span class="regexp">/ul&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>Layout&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// pages/index.js</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></div><div class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> PostLink = <span class="function">(<span class="params">props</span>) =&gt;</span> (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">li</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">Link</span> <span class="attr">href</span>=<span class="string">&#123;</span>`/<span class="attr">post</span>?<span class="attr">title</span>=<span class="string">$&#123;props.title&#125;</span>`&#125;&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">a</span>&gt;</span>&#123;props.title&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">Link</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">)</div><div class="line"><span class="comment">// 通过Link组件href属性向下一个页面传参</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</div><div class="line">  &lt;Layout&gt;</div><div class="line">    &lt;h1&gt;My Blog&lt;/h1&gt;</div><div class="line">    &lt;ul&gt;</div><div class="line">      &lt;PostLink title="Hello Next.js"/&gt;</div><div class="line">      &lt;PostLink title="Learn Next.js is awesome"/&gt;</div><div class="line">      &lt;PostLink title="Deploy apps with Zeit"/&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">  &lt;/Layout&gt;</div><div class="line">)</div></pre></td></tr></table></figure>
 <p>处理查询参数</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> (props) =&gt; (</span><br><span class="line">    &lt;Layout&gt;</span><br><span class="line">       &lt;h1&gt;&#123;props.url.query.title&#125;&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">       &lt;p&gt;This is the blog post content.&lt;/</span>p&gt;</span><br><span class="line">    &lt;<span class="regexp">/Layout&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> (props) =&gt; (</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">Layout</span>&gt;</span></span></div><div class="line">       <span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;props.url.query.title&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">       <span class="tag">&lt;<span class="name">p</span>&gt;</span>This is the blog post content.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">Layout</span>&gt;</span></div><div class="line">)</div></pre></td></tr></table></figure>
 <p>只有default导出的组件才有<code>url</code>属性</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Content = <span class="function">(<span class="params">props</span>) =&gt;</span> (</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;h1&gt;&#123;props.url.query.title&#125;&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">    &lt;p&gt;This is the blog post content.&lt;/</span>p&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default () =&gt; (</span></span><br><span class="line"><span class="regexp">    &lt;Layout&gt;</span></span><br><span class="line"><span class="regexp">       &lt;Content /</span>&gt;</span><br><span class="line">    &lt;<span class="regexp">/Layout&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ 页面会抛出异常</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ 可以通过组件传值的方式将url参数带到子组件中去</span></span><br><span class="line"><span class="regexp">&lt;Layout&gt;</span></span><br><span class="line"><span class="regexp">   &lt;Content url=&#123;props.url&#125; /</span>&gt;</span><br><span class="line">&lt;<span class="regexp">/Layout&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> Content = <span class="function">(<span class="params">props</span>) =&gt;</span> (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;props.url.query.title&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>This is the blog post content.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">)</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">Layout</span>&gt;</span></span></div><div class="line">       <span class="tag">&lt;<span class="name">Content</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">Layout</span>&gt;</span></div><div class="line">)</div><div class="line"></div><div class="line"><span class="comment">// 页面会抛出异常</span></div><div class="line"></div><div class="line"><span class="comment">// 可以通过组件传值的方式将url参数带到子组件中去</span></div><div class="line">&lt;Layout&gt;</div><div class="line">   <span class="xml"><span class="tag">&lt;<span class="name">Content</span> <span class="attr">url</span>=<span class="string">&#123;props.url&#125;</span> /&gt;</span></span></div><div class="line"><span class="tag">&lt;/<span class="name">Layout</span>&gt;</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>每个页面都会获取<code>url</code>属性，可以<code>props.url.query.title</code>拿到相关的数据。</p>
 </blockquote>
 <h4 id="自定义路由"><a href="#自定义路由" class="headerlink" title="自定义路由"></a>自定义路由</h4><p>Link组件有个<code>as</code>属性，我们可以通过它自定义路由格式，它会显示在浏览器的地址栏中，但实际下个页面接收的数据还是href属性上的参数。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> PostLink = <span class="function">(<span class="params">props</span>) =&gt;</span> (</span><br><span class="line">  &lt;li&gt;</span><br><span class="line">    &lt;Link <span class="keyword">as</span>=&#123;<span class="string">`/p/<span class="subst">$&#123;props.id&#125;</span>`</span>&#125; href=&#123;<span class="string">`/post?title=<span class="subst">$&#123;props.title&#125;</span>`</span>&#125;&gt;</span><br><span class="line">      &lt;a&gt;&#123;props.title&#125;&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>Link&gt;</span><br><span class="line">  &lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> PostLink = <span class="function">(<span class="params">props</span>) =&gt;</span> (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">li</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">Link</span> <span class="attr">as</span>=<span class="string">&#123;</span>`/<span class="attr">p</span>/$&#123;<span class="attr">props.id</span>&#125;`&#125; <span class="attr">href</span>=<span class="string">&#123;</span>`/<span class="attr">post</span>?<span class="attr">title</span>=<span class="string">$&#123;props.title&#125;</span>`&#125;&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">a</span>&gt;</span>&#123;props.title&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">Link</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">)</div></pre></td></tr></table></figure>
 <blockquote>
 <p>虽然可以自定义客户端路由显示，但是刷新页面可能会404,服务端没有对应的路由。</p>
 </blockquote>
 <h4 id="自定义服务器"><a href="#自定义服务器" class="headerlink" title="自定义服务器"></a>自定义服务器</h4><p>安装<code>Express</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save express</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save express</div></pre></td></tr></table></figure>
 <p>根目录下创建<code>server.js</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">const</span> next = <span class="built_in">require</span>(<span class="string">'next'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> dev = process.env.NODE_ENV !== <span class="string">'production'</span></span><br><span class="line"><span class="keyword">const</span> app = next(&#123; dev &#125;)</span><br><span class="line"><span class="keyword">const</span> handle = app.getRequestHandler()</span><br><span class="line"></span><br><span class="line">app.prepare()</span><br><span class="line">.then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> server = express()</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 处理对应路由</span></span><br><span class="line">  server.get(<span class="string">'/p/:id'</span>, (req, res) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> actualPage = <span class="string">'/post'</span></span><br><span class="line">    <span class="comment">// 这里拿到的title是路由中的id,而客户端路由拿到的是Link href中的title，有点区别，但实际生产环境中都会使用资源id去请求数据。</span></span><br><span class="line">    <span class="keyword">const</span> queryParams = &#123; <span class="attr">title</span>: req.params.id &#125; </span><br><span class="line">    <span class="comment">// 定义了一个路由映射到已存在页面，同时附带查询参数</span></span><br><span class="line">    app.render(req, res, actualPage, queryParams)</span><br><span class="line">  &#125;)</span><br><span class="line">  </span><br><span class="line">  server.get(<span class="string">'*'</span>, (req, res) =&gt; &#123;</span><br><span class="line">    <span class="keyword">return</span> handle(req, res)</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">  server.listen(<span class="number">3000</span>, (err) =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'&gt; Ready on http://localhost:3000'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br><span class="line">.catch(<span class="function">(<span class="params">ex</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.error(ex.stack)</span><br><span class="line">  process.exit(<span class="number">1</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</div><div class="line"><span class="keyword">const</span> next = <span class="built_in">require</span>(<span class="string">'next'</span>)</div><div class="line"></div><div class="line"><span class="keyword">const</span> dev = process.env.NODE_ENV !== <span class="string">'production'</span></div><div class="line"><span class="keyword">const</span> app = next(&#123; dev &#125;)</div><div class="line"><span class="keyword">const</span> handle = app.getRequestHandler()</div><div class="line"></div><div class="line">app.prepare()</div><div class="line">.then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">  <span class="keyword">const</span> server = express()</div><div class="line"></div><div class="line">  <span class="comment">// 处理对应路由</span></div><div class="line">  server.get(<span class="string">'/p/:id'</span>, (req, res) =&gt; &#123;</div><div class="line">    <span class="keyword">const</span> actualPage = <span class="string">'/post'</span></div><div class="line">    <span class="comment">// 这里拿到的title是路由中的id,而客户端路由拿到的是Link href中的title，有点区别，但实际生产环境中都会使用资源id去请求数据。</span></div><div class="line">    <span class="keyword">const</span> queryParams = &#123; <span class="attr">title</span>: req.params.id &#125; </div><div class="line">    <span class="comment">// 定义了一个路由映射到已存在页面，同时附带查询参数</span></div><div class="line">    app.render(req, res, actualPage, queryParams)</div><div class="line">  &#125;)</div><div class="line">  </div><div class="line">  server.get(<span class="string">'*'</span>, (req, res) =&gt; &#123;</div><div class="line">    <span class="keyword">return</span> handle(req, res)</div><div class="line">  &#125;)</div><div class="line"></div><div class="line">  server.listen(<span class="number">3000</span>, (err) =&gt; &#123;</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'&gt; Ready on http://localhost:3000'</span>)</div><div class="line">  &#125;)</div><div class="line">&#125;)</div><div class="line">.catch(<span class="function">(<span class="params">ex</span>) =&gt;</span> &#123;</div><div class="line">  <span class="built_in">console</span>.error(ex.stack)</div><div class="line">  process.exit(<span class="number">1</span>)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <p>更新下npm脚本</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"dev"</span>: <span class="string">"node server.js"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"dev"</span>: <span class="string">"node server.js"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="远程获取数据"><a href="#远程获取数据" class="headerlink" title="远程获取数据"></a>远程获取数据</h4><p>可以通过一个异步方法<code>getInitialProps</code>（同时支持客户端和服务端）来获取远程数据。</p>
 <p>安装 <code>isomorphic-unfetch</code> 请求模块</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save isomorphic-unfetch</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save isomorphic-unfetch</div></pre></td></tr></table></figure>
 <p>修改首页内容</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></span><br><span class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></span><br><span class="line"><span class="keyword">import</span> fetch <span class="keyword">from</span> <span class="string">'isomorphic-unfetch'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Index = <span class="function">(<span class="params">props</span>) =&gt;</span> (</span><br><span class="line">  &lt;Layout&gt;</span><br><span class="line">    &lt;h1&gt;Batman TV Shows&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">    &lt;ul&gt;</span></span><br><span class="line"><span class="regexp">      &#123;props.shows.map((&#123;show&#125;) =&gt; (</span></span><br><span class="line"><span class="regexp">        &lt;li key=&#123;show.id&#125;&gt;</span></span><br><span class="line"><span class="regexp">          &lt;Link as=&#123;`/</span>p/$&#123;show.id&#125;<span class="string">`&#125; href=&#123;`</span>/post?id=$&#123;show.id&#125;<span class="string">`&#125;&gt;</span></span><br><span class="line"><span class="string">            &lt;a&gt;&#123;show.name&#125;&lt;/a&gt;</span></span><br><span class="line"><span class="string">          &lt;/Link&gt;</span></span><br><span class="line"><span class="string">        &lt;/li&gt;</span></span><br><span class="line"><span class="string">      ))&#125;</span></span><br><span class="line"><span class="string">    &lt;/ul&gt;</span></span><br><span class="line"><span class="string">  &lt;/Layout&gt;</span></span><br><span class="line"><span class="string">)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Post.getInitialProps = async function (context) &#123;</span></span><br><span class="line"><span class="string">  // 可以通过context上的query拿到查询参数</span></span><br><span class="line"><span class="string">  const &#123; id &#125; = context.query</span></span><br><span class="line"><span class="string">  const res = await fetch(`</span>https:<span class="comment">//api.tvmaze.com/shows/$&#123;id&#125;`)</span></span><br><span class="line">  <span class="keyword">const</span> show = <span class="keyword">await</span> res.json()</span><br><span class="line"></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`Fetched show: <span class="subst">$&#123;show.name&#125;</span>`</span>)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &#123; show &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Index</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></div><div class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></div><div class="line"><span class="keyword">import</span> fetch <span class="keyword">from</span> <span class="string">'isomorphic-unfetch'</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> Index = <span class="function">(<span class="params">props</span>) =&gt;</span> (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">Layout</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Batman TV Shows<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">      &#123;props.shows.map((&#123;show&#125;) =&gt; (</div><div class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">key</span>=<span class="string">&#123;show.id&#125;</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">Link</span> <span class="attr">as</span>=<span class="string">&#123;</span>`/<span class="attr">p</span>/$&#123;<span class="attr">show.id</span>&#125;`&#125; <span class="attr">href</span>=<span class="string">&#123;</span>`/<span class="attr">post</span>?<span class="attr">id</span>=<span class="string">$&#123;show.id&#125;</span>`&#125;&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">a</span>&gt;</span>&#123;show.name&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">          <span class="tag">&lt;/<span class="name">Link</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      ))&#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">Layout</span>&gt;</span></div><div class="line">)</div><div class="line"></div><div class="line">Post.getInitialProps = <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">context</span>) </span>&#123;</div><div class="line">  <span class="comment">// 可以通过context上的query拿到查询参数</span></div><div class="line">  <span class="keyword">const</span> &#123; id &#125; = context.query</div><div class="line">  <span class="keyword">const</span> res = <span class="keyword">await</span> fetch(<span class="string">`https://api.tvmaze.com/shows/<span class="subst">$&#123;id&#125;</span>`</span>)</div><div class="line">  <span class="keyword">const</span> show = <span class="keyword">await</span> res.json()</div><div class="line"></div><div class="line">  <span class="built_in">console</span>.log(<span class="string">`Fetched show: <span class="subst">$&#123;show.name&#125;</span>`</span>)</div><div class="line"></div><div class="line">  <span class="keyword">return</span> &#123; show &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> Index</div></pre></td></tr></table></figure>
 <p>getInitialProps receives a context object with the following properties:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">pathname - path section of URL</span><br><span class="line">query - query string section of URL parsed as an object</span><br><span class="line">asPath - the actual url path</span><br><span class="line">req - HTTP request object (server only)</span><br><span class="line">res - HTTP response object (server only)</span><br><span class="line">jsonPageRes - Fetch Response object (client only)</span><br><span class="line">err - Error object if any error is encountered during the rendering</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">pathname - path section of URL</div><div class="line">query - query string section of URL parsed as an object</div><div class="line">asPath - the actual url path</div><div class="line">req - HTTP request object (server only)</div><div class="line">res - HTTP response object (server only)</div><div class="line">jsonPageRes - Fetch Response object (client only)</div><div class="line">err - Error object if any error is encountered during the rendering</div></pre></td></tr></table></figure>
 <h4 id="组件样式"><a href="#组件样式" class="headerlink" title="组件样式"></a>组件样式</h4><p>给组件添加样式有如下两种方法：</p>
 <ul>
 <li>外部引入css文件</li>
 <li>css in js （next推荐）</li>
 </ul>
-<p>next.js使用 <a href="https://github.com/zeit/styled-jsx" target="_blank" rel="noopener">styled-jxs</a>控制局部样式。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></span><br><span class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPosts</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> [</span><br><span class="line">    &#123; <span class="attr">id</span>: <span class="string">'hello-nextjs'</span>, <span class="attr">title</span>: <span class="string">'Hello Next.js'</span>&#125;,</span><br><span class="line">    &#123; <span class="attr">id</span>: <span class="string">'learn-nextjs'</span>, <span class="attr">title</span>: <span class="string">'Learn Next.js is awesome'</span>&#125;,</span><br><span class="line">    &#123; <span class="attr">id</span>: <span class="string">'deploy-nextjs'</span>, <span class="attr">title</span>: <span class="string">'Deploy apps with ZEIT'</span>&#125;,</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</span><br><span class="line">  &lt;Layout&gt;</span><br><span class="line">    &lt;h1&gt;My Blog&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">    &lt;ul&gt;</span></span><br><span class="line"><span class="regexp">      &#123;getPosts().map((post) =&gt; (</span></span><br><span class="line"><span class="regexp">        &lt;li key=&#123;post.id&#125;&gt;</span></span><br><span class="line"><span class="regexp">          &lt;Link as=&#123;`/</span>p/$&#123;post.id&#125;<span class="string">`&#125; href=&#123;`</span>/post?title=$&#123;post.title&#125;<span class="string">`&#125;&gt;</span></span><br><span class="line"><span class="string">            &lt;a&gt;&#123;post.title&#125;&lt;/a&gt;</span></span><br><span class="line"><span class="string">          &lt;/Link&gt;</span></span><br><span class="line"><span class="string">          &lt;!-- prefetch 会预加载下个页面的脚本，不会加载数据--&gt;</span></span><br><span class="line"><span class="string">          &lt;li&gt;&lt;Link prefetch href='/'&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/Link&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">        &lt;/li&gt;</span></span><br><span class="line"><span class="string">      ))&#125;</span></span><br><span class="line"><span class="string">    &lt;/ul&gt;</span></span><br><span class="line"><span class="string">    &lt;!-- 除了 Link 添加prefech属性，还可以通过脚本预加载--&gt;</span></span><br><span class="line"><span class="string">    &lt;a onClick=&#123; () =&gt; setTimeout(() =&gt; url.pushTo('/dynamic'), 100) &#125;&gt;</span></span><br><span class="line"><span class="string">      A route transition will happen after 100ms</span></span><br><span class="line"><span class="string">    &lt;/a&gt;</span></span><br><span class="line"><span class="string">    &#123;</span></span><br><span class="line"><span class="string">      // but we can prefetch it!</span></span><br><span class="line"><span class="string">      Router.prefetch('/dynamic')</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    // 样式必须用反引号包裹，必须放在模板字符串中，Styled jsx仅仅作为一个babel插件</span></span><br><span class="line"><span class="string">    &lt;style jsx&gt;&#123;`</span></span><br><span class="line">      h1, a &#123;</span><br><span class="line">        font-family: <span class="string">"Arial"</span>;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      ul &#123;</span><br><span class="line">        padding: <span class="number">0</span>;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      li &#123;</span><br><span class="line">        list-style: none;</span><br><span class="line">        margin: <span class="number">5</span>px <span class="number">0</span>;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      a &#123;</span><br><span class="line">        text-decoration: none;</span><br><span class="line">        color: blue;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      a:hover &#123;</span><br><span class="line">        opacity: <span class="number">0.6</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="string">`&#125;&lt;/style&gt;</span></span><br><span class="line"><span class="string">  &lt;/Layout&gt;</span></span><br><span class="line"><span class="string">)</span></span><br></pre></td></tr></table></figure>
+<p>next.js使用 <a href="https://github.com/zeit/styled-jsx" target="_blank" rel="external">styled-jxs</a>控制局部样式。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Layout <span class="keyword">from</span> <span class="string">'../components/MyLayout.js'</span></div><div class="line"><span class="keyword">import</span> Link <span class="keyword">from</span> <span class="string">'next/link'</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPosts</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> [</div><div class="line">    &#123; <span class="attr">id</span>: <span class="string">'hello-nextjs'</span>, <span class="attr">title</span>: <span class="string">'Hello Next.js'</span>&#125;,</div><div class="line">    &#123; <span class="attr">id</span>: <span class="string">'learn-nextjs'</span>, <span class="attr">title</span>: <span class="string">'Learn Next.js is awesome'</span>&#125;,</div><div class="line">    &#123; <span class="attr">id</span>: <span class="string">'deploy-nextjs'</span>, <span class="attr">title</span>: <span class="string">'Deploy apps with ZEIT'</span>&#125;,</div><div class="line">  ]</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; (</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">Layout</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>My Blog<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">      &#123;getPosts().map((post) =&gt; (</div><div class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">key</span>=<span class="string">&#123;post.id&#125;</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">Link</span> <span class="attr">as</span>=<span class="string">&#123;</span>`/<span class="attr">p</span>/$&#123;<span class="attr">post.id</span>&#125;`&#125; <span class="attr">href</span>=<span class="string">&#123;</span>`/<span class="attr">post</span>?<span class="attr">title</span>=<span class="string">$&#123;post.title&#125;</span>`&#125;&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">a</span>&gt;</span>&#123;post.title&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">          <span class="tag">&lt;/<span class="name">Link</span>&gt;</span></div><div class="line">          <span class="comment">&lt;!-- prefetch 会预加载下个页面的脚本，不会加载数据--&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">Link</span> <span class="attr">prefetch</span> <span class="attr">href</span>=<span class="string">'/'</span>&gt;</span><span class="tag">&lt;<span class="name">a</span>&gt;</span>Home<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">Link</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      ))&#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 除了 Link 添加prefech属性，还可以通过脚本预加载--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">onClick</span>=<span class="string">&#123;</span> () =&gt;</span> setTimeout(() =&gt; url.pushTo('/dynamic'), 100) &#125;&gt;</div><div class="line">      A route transition will happen after 100ms</div><div class="line">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">    &#123;</div><div class="line">      // but we can prefetch it!</div><div class="line">      Router.prefetch('/dynamic')</div><div class="line">    &#125;</div><div class="line">    // 样式必须用反引号包裹，必须放在模板字符串中，Styled jsx仅仅作为一个babel插件</div><div class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">jsx</span>&gt;</span><span class="undefined">&#123;`</span></div><div class="line">      h1, a &#123;</div><div class="line">        font-family: "Arial";</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      ul &#123;</div><div class="line">        padding: 0;</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      li &#123;</div><div class="line">        list-style: none;</div><div class="line">        margin: 5px 0;</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      a &#123;</div><div class="line">        text-decoration: none;</div><div class="line">        color: blue;</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      a:hover &#123;</div><div class="line">        opacity: 0.6;</div><div class="line">      &#125;</div><div class="line">    `&#125;<span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">Layout</span>&gt;</span></div><div class="line">)</div></pre></td></tr></table></figure>
 <blockquote>
 <p>styled-jsx 样式默认不作用于子组件，如果要子组件生效，可以单独定义子组件样式，或者使用全局样式。</p>
 </blockquote>
 <p><code>styled-jsx</code> 全局样式</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;style jsx global&gt;&#123;<span class="string">`</span></span><br><span class="line"><span class="string">     .markdown &#123;</span></span><br><span class="line"><span class="string">       font-family: 'Arial';</span></span><br><span class="line"><span class="string">     &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     .markdown a &#123;</span></span><br><span class="line"><span class="string">       text-decoration: none;</span></span><br><span class="line"><span class="string">       color: blue;</span></span><br><span class="line"><span class="string">     &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     .markdown a:hover &#123;</span></span><br><span class="line"><span class="string">       opacity: 0.6;</span></span><br><span class="line"><span class="string">     &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     .markdown h3 &#123;</span></span><br><span class="line"><span class="string">       margin: 0;</span></span><br><span class="line"><span class="string">       padding: 0;</span></span><br><span class="line"><span class="string">       text-transform: uppercase;</span></span><br><span class="line"><span class="string">     &#125;</span></span><br><span class="line"><span class="string">  `</span>&#125;&lt;<span class="regexp">/style&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="应用部署"><a href="#应用部署" class="headerlink" title="应用部署"></a>应用部署</h3><h4 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h4><ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;style jsx global&gt;&#123;<span class="string">`</span></div><div class="line">     .markdown &#123;</div><div class="line">       font-family: 'Arial';</div><div class="line">     &#125;</div><div class="line"></div><div class="line">     .markdown a &#123;</div><div class="line">       text-decoration: none;</div><div class="line">       color: blue;</div><div class="line">     &#125;</div><div class="line"></div><div class="line">     .markdown a:hover &#123;</div><div class="line">       opacity: 0.6;</div><div class="line">     &#125;</div><div class="line"></div><div class="line">     .markdown h3 &#123;</div><div class="line">       margin: 0;</div><div class="line">       padding: 0;</div><div class="line">       text-transform: uppercase;</div><div class="line">     &#125;</div><div class="line">  `&#125;&lt;<span class="regexp">/style&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="应用部署"><a href="#应用部署" class="headerlink" title="应用部署"></a>应用部署</h3><p>####部署步骤</p>
+<ol>
 <li>build代码</li>
 <li>启动服务</li>
 </ol>
 <p>修改下npm脚本</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"build"</span>: <span class="string">"next build"</span>,</span><br><span class="line">  <span class="string">"start"</span>: <span class="string">"next start"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="string">"scripts"</span>: &#123;</div><div class="line">  <span class="string">"build"</span>: <span class="string">"next build"</span>,</div><div class="line">  <span class="string">"start"</span>: <span class="string">"next start"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="启动多个服务"><a href="#启动多个服务" class="headerlink" title="启动多个服务"></a>启动多个服务</h4><p>为了水平扩展，通常会使用多个app实例</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//$PORT 为环境变量</span></span><br><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"start"</span>: <span class="string">"next start -p $PORT"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//window下用 "next start -p %PORT%"</span></span><br></pre></td></tr></table></figure>
-<p>调用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PORT=8000 npm start</span><br><span class="line">PORT=9000 npm start</span><br></pre></td></tr></table></figure></p>
-<p>可以通过 <a href="https://www.npmjs.com/package/cross-env" target="_blank" rel="noopener">cross-env</a> 设置环境变量。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//$PORT 为环境变量</span></div><div class="line"><span class="string">"scripts"</span>: &#123;</div><div class="line">  <span class="string">"start"</span>: <span class="string">"next start -p $PORT"</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//window下用 "next start -p %PORT%"</span></div></pre></td></tr></table></figure>
+<p>调用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">PORT=8000 npm start</div><div class="line">PORT=9000 npm start</div></pre></td></tr></table></figure></p>
+<p>可以通过 <a href="https://www.npmjs.com/package/cross-env" target="_blank" rel="external">cross-env</a> 设置环境变量。</p>
 <h3 id="高阶使用"><a href="#高阶使用" class="headerlink" title="高阶使用"></a>高阶使用</h3><h4 id="导出静态网站"><a href="#导出静态网站" class="headerlink" title="导出静态网站"></a>导出静态网站</h4><p>在根目录下创建文件<code>next.config.js</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  exportPathMap: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="string">'/'</span>: &#123; <span class="attr">page</span>: <span class="string">'/'</span> &#125;,</span><br><span class="line">      <span class="string">'/about'</span>: &#123; <span class="attr">page</span>: <span class="string">'/about'</span> &#125;,</span><br><span class="line">      <span class="string">'/p/hello-nextjs'</span>: &#123; <span class="attr">page</span>: <span class="string">'/post'</span>, <span class="attr">query</span>: &#123; <span class="attr">title</span>: <span class="string">"Hello Next.js"</span> &#125; &#125;,</span><br><span class="line">      <span class="string">'/p/learn-nextjs'</span>: &#123; <span class="attr">page</span>: <span class="string">'/post'</span>, <span class="attr">query</span>: &#123; <span class="attr">title</span>: <span class="string">"Learn Next.js is awesome"</span> &#125; &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  <span class="attr">exportPathMap</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">      <span class="string">'/'</span>: &#123; <span class="attr">page</span>: <span class="string">'/'</span> &#125;,</div><div class="line">      <span class="string">'/about'</span>: &#123; <span class="attr">page</span>: <span class="string">'/about'</span> &#125;,</div><div class="line">      <span class="string">'/p/hello-nextjs'</span>: &#123; <span class="attr">page</span>: <span class="string">'/post'</span>, <span class="attr">query</span>: &#123; <span class="attr">title</span>: <span class="string">"Hello Next.js"</span> &#125; &#125;,</div><div class="line">      <span class="string">'/p/learn-nextjs'</span>: &#123; <span class="attr">page</span>: <span class="string">'/post'</span>, <span class="attr">query</span>: &#123; <span class="attr">title</span>: <span class="string">"Learn Next.js is awesome"</span> &#125; &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>修改npm脚本</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"build"</span>: <span class="string">"next build"</span>,</span><br><span class="line">    <span class="string">"export"</span>: <span class="string">"next export"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"build"</span>: <span class="string">"next build"</span>,</div><div class="line">    <span class="string">"export"</span>: <span class="string">"next export"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>执行导出命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run <span class="built_in">export</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run <span class="built_in">export</span></div></pre></td></tr></table></figure>
 <p>导入内容会放在<code>out</code>目录中，可放在任何静态服务器上使用。</p>
-<p>☞<a href="https://github.com/zeit/next.js#custom-server-and-routing" target="_blank" rel="noopener">官网</a></p>
+<p>☞<a href="https://github.com/zeit/next.js#custom-server-and-routing" target="_blank" rel="external">官网</a></p>
 
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+        
 
-    
-      <div>
-        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作！</div>
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
-  </button>
-  <div id="QR" style="display: none;">
+      
+    </div>
 
-    
-      <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/uploads/wechat_reward.png" alt="ccrsky 微信支付"/>
-        <p>微信支付</p>
-      </div>
-    
-
-    
-      <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/uploads/alipay_reward.png" alt="ccrsky 支付宝"/>
-        <p>支付宝</p>
-      </div>
-    
-
-    
-
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/wechat_reward.png" alt="ccrsky WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/alipay_reward.png" alt="ccrsky Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
   </div>
-</div>
 
-      </div>
-    
 
-    
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
 
     <footer class="post-footer">
       
@@ -481,7 +561,7 @@
       
 
       
-      
+        
       
 
       
@@ -509,10 +589,6 @@
       
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -528,9 +604,13 @@
 
 
           
-
-  
-
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/08/17/next/"
+           data-title="next快速入门" data-url="https://ccrsky.github.io/2017/08/17/next/">
+      </div>
+    
+  </div>
 
 
         </div>
@@ -546,113 +626,117 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
             文章目录
           </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+          <li class="sidebar-nav-overview" data-target="site-overview">
             站点概览
           </li>
         </ul>
       
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/uploads/avator.jpg"
-                alt="ccrsky" />
-            
-              <p class="site-author-name" itemprop="name">ccrsky</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">13</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avator.jpg"
+               alt="ccrsky" />
+          <p class="site-author-name" itemprop="name">ccrsky</p>
+           
+              <p class="site-description motion-element" itemprop="description">聚沙成塔，集腋成裘</p>
+          
+        </div>
+        <nav class="site-state motion-element">
 
           
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
 
           
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/ccrsky" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.zhihu.com/people/cheng-chen-95-36" target="_blank" title="知乎">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>知乎</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://weibo.com/u/2464455840" target="_blank" title="微博">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>微博</a>
-                  </span>
-                
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
             </div>
           
 
           
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
-          
-          
+        </nav>
 
-          
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
 
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ccrsky" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/cheng-chen-95-36" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/2464455840" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+          
         </div>
+
+        
+        
+
+        
+        
+
+        
+
+
       </section>
 
       
@@ -665,7 +749,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#特点"><span class="nav-number">1.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速入门"><span class="nav-number">2.</span> <span class="nav-text">快速入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化项目"><span class="nav-number">2.1.</span> <span class="nav-text">初始化项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加路由"><span class="nav-number">2.2.</span> <span class="nav-text">添加路由</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#页面导航"><span class="nav-number">2.3.</span> <span class="nav-text">页面导航</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#共享组件"><span class="nav-number">2.4.</span> <span class="nav-text">共享组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Layout组件"><span class="nav-number">2.5.</span> <span class="nav-text">Layout组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态页面"><span class="nav-number">2.6.</span> <span class="nav-text">动态页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义路由"><span class="nav-number">2.7.</span> <span class="nav-text">自定义路由</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义服务器"><span class="nav-number">2.8.</span> <span class="nav-text">自定义服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程获取数据"><span class="nav-number">2.9.</span> <span class="nav-text">远程获取数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#组件样式"><span class="nav-number">2.10.</span> <span class="nav-text">组件样式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用部署"><span class="nav-number">3.</span> <span class="nav-text">应用部署</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#部署步骤"><span class="nav-number">3.1.</span> <span class="nav-text">部署步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动多个服务"><span class="nav-number">3.2.</span> <span class="nav-text">启动多个服务</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高阶使用"><span class="nav-number">4.</span> <span class="nav-text">高阶使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#导出静态网站"><span class="nav-number">4.1.</span> <span class="nav-text">导出静态网站</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Next"><span class="nav-number">1.</span> <span class="nav-text">Next</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#特点"><span class="nav-number">1.1.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速入门"><span class="nav-number">1.2.</span> <span class="nav-text">快速入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化项目"><span class="nav-number">1.2.1.</span> <span class="nav-text">初始化项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加路由"><span class="nav-number">1.2.2.</span> <span class="nav-text">添加路由</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#页面导航"><span class="nav-number">1.2.3.</span> <span class="nav-text">页面导航</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#共享组件"><span class="nav-number">1.2.4.</span> <span class="nav-text">共享组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Layout组件"><span class="nav-number">1.2.5.</span> <span class="nav-text">Layout组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态页面"><span class="nav-number">1.2.6.</span> <span class="nav-text">动态页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义路由"><span class="nav-number">1.2.7.</span> <span class="nav-text">自定义路由</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义服务器"><span class="nav-number">1.2.8.</span> <span class="nav-text">自定义服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程获取数据"><span class="nav-number">1.2.9.</span> <span class="nav-text">远程获取数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#组件样式"><span class="nav-number">1.2.10.</span> <span class="nav-text">组件样式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用部署"><span class="nav-number">1.3.</span> <span class="nav-text">应用部署</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#启动多个服务"><span class="nav-number">1.3.1.</span> <span class="nav-text">启动多个服务</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高阶使用"><span class="nav-number">1.4.</span> <span class="nav-text">高阶使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#导出静态网站"><span class="nav-number">1.4.1.</span> <span class="nav-text">导出静态网站</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -685,36 +769,30 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">ccrsky</span>
-
-  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
 
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
-
-
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
 
 
         
-
-
-
-
-
-
 
         
       </div>
@@ -725,8 +803,6 @@
         <i class="fa fa-arrow-up"></i>
         
       </div>
-    
-
     
 
   </div>
@@ -752,51 +828,31 @@
 
 
 
-
-
-
-
-
-
-
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
@@ -804,46 +860,54 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
 
 
 
   
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
 
 
 
   
 
 
-  
-
-
-
-
-	
-
-
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
   
 
+  
+    
+  
 
-
-
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"ccrsky"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
 
 
 
@@ -862,13 +926,6 @@
 
 
 
-  
-
-  
-
-  
-
-  
   
 
   
