@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2018-03-18T18:15:19.277Z</updated>
+  <updated>2018-05-02T12:59:49.981Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>koa实战</title>
+    <link href="https://ccrsky.github.io/2018/04/19/koa%E5%AE%9E%E6%88%98/"/>
+    <id>https://ccrsky.github.io/2018/04/19/koa实战/</id>
+    <published>2018-04-19T11:24:36.000Z</published>
+    <updated>2018-05-02T12:59:49.981Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;koa实战-快速打造一个CMS系统&quot;&gt;&lt;a href=&quot;#koa实战-快速打造一个CMS系统&quot; class=&quot;headerlink&quot; title=&quot;koa实战-快速打造一个CMS系统&quot;&gt;&lt;/a&gt;koa实战-快速打造一个CMS系统&lt;/h3&gt;&lt;h3 id=&quot;koa介绍
+      
+    
+    </summary>
+    
+      <category term="node" scheme="https://ccrsky.github.io/categories/node/"/>
+    
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+      <category term="node" scheme="https://ccrsky.github.io/tags/node/"/>
+    
+  </entry>
   
   <entry>
     <title>pm2快速入门</title>
