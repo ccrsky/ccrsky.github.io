@@ -274,6 +274,205 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/04/26/sed常用操作命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ccrsky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avator.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ccrsky">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/26/sed常用操作命令/" itemprop="url">sed常用操作命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-26T20:46:08+08:00">
+                2017-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/26/sed常用操作命令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/26/sed常用操作命令/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="SED命令"><a href="#SED命令" class="headerlink" title="SED命令"></a>SED命令</h4><p>SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。</p>
+<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><ol>
+<li>读一行到缓存区处理（模式空间）</li>
+<li>执行sed命令</li>
+<li>输出结果接着继续处理下一行（重复此流程直至结束）</li>
+</ol>
+<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><ul>
+<li>文本替换</li>
+<li>选择性的输出文本文件</li>
+<li>从文本文件的某处开始编辑</li>
+<li>无交互式的对文本文件进行编辑等</li>
+</ul>
+<h4 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sed [option]  command files</span><br><span class="line">option:</span><br><span class="line">    -e:指定要执行的命令，使用该参数，我们可以指定多个命令</span><br><span class="line">    -n:默认情况下，模式空间中的内容在处理完成后将会打印到标准输出，该选项用于阻止该行为</span><br><span class="line">    -f:指定包含要执行的命令的脚本文件(一行一个命令,类似多个-e)</span><br><span class="line">    </span><br><span class="line">command：行定位（或正则）+ sed命令 （命令使用单引号包裹）</span><br><span class="line"></span><br><span class="line">sed -e '1d' -e '2d' -e '5d' demo.txt</span><br></pre></td></tr></table></figure>
+<p>在SED中使用的命令会作用于文本数据的所有行。如果只想将命令作用于特定的行或者某些行，则需要使用 “行寻址” 功能。</p>
+<h5 id="行寻址两种形式："><a href="#行寻址两种形式：" class="headerlink" title="行寻址两种形式："></a>行寻址两种形式：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1.以数字形式表示的行区间</span><br><span class="line">sed -n &apos;3p&apos; demo.txt </span><br><span class="line"></span><br><span class="line"># 区间 </span><br><span class="line">sed -n &apos;2,5 p&apos; demo.txt </span><br><span class="line"></span><br><span class="line"># $ 表示自后一行 ^ 标识开始</span><br><span class="line">sed -n &apos;3,$ p&apos; demo.txt</span><br><span class="line"></span><br><span class="line">2.以文本模式来过滤行</span><br><span class="line">sed -n &apos;/Alchemist/, 5 p&apos; books.txt</span><br></pre></td></tr></table></figure>
+<h5 id="操作符"><a href="#操作符" class="headerlink" title="操作符 + , ~"></a>操作符 + , ~</h5><p>加号（+）操作符，它可以与逗号（,）操作符一起使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 从第二行开始下4行</span><br><span class="line">sed -n &apos;2,+4 p&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<p>使用波浪线操作符（~）指定地址范围，它使用M~N（步长）的形式，告诉SED应该处理M行开始的每N行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 50~5匹配行号5，10，15等</span><br><span class="line">sed -n &apos;5~5 p&apos; demo.txt &gt; a.txt</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>sed操作不影响源文件，可用重定向覆写源文件.</p>
+</blockquote>
+<h4 id="sed操作命令"><a href="#sed操作命令" class="headerlink" title="sed操作命令"></a>sed操作命令</h4><h5 id="打印命令-p"><a href="#打印命令-p" class="headerlink" title="打印命令 p"></a>打印命令 <code>p</code></h5><p>打印命令p通常和-n选项配合</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 打印1~10行</span><br><span class="line">sed -n &apos;1,10p&apos; demo.txt</span><br><span class="line"></span><br><span class="line"># 打印非10行 </span><br><span class="line">sed -n &apos;10!p&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="插入命令-a-i"><a href="#插入命令-a-i" class="headerlink" title="插入命令 a/i"></a>插入命令 <code>a/i</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 第五行后插入hello</span><br><span class="line">sed -n &apos;5a hello&apos; demo.txt</span><br><span class="line"></span><br><span class="line"># 第五行前插入hello</span><br><span class="line">sed -n &apos;5i hello&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="替代-c"><a href="#替代-c" class="headerlink" title="替代 c"></a>替代 <code>c</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 第四行替换成hi</span><br><span class="line">sed -n &apos;4c hi&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="删除-d"><a href="#删除-d" class="headerlink" title="删除 d"></a>删除 <code>d</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 删除第十行</span><br><span class="line">sed -n &apos;10d&apos; demo.txt </span><br><span class="line"></span><br><span class="line"># 删除空行</span><br><span class="line">sed &apos;^&amp;d&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="替换-s"><a href="#替换-s" class="headerlink" title="替换 s"></a>替换 <code>s</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># false 替换成true</span><br><span class="line">sed &apos;s/false/true/g&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="执行多条命令-；"><a href="#执行多条命令-；" class="headerlink" title="执行多条命令 { ；}"></a>执行多条命令 <code>{ ；}</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 多条命令使用&#123;&#125;，命令间用分号分隔</span><br><span class="line">sed -n &apos;&#123;p;n;p&#125;&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="读取下一行到模式空间里去-n"><a href="#读取下一行到模式空间里去-n" class="headerlink" title="读取下一行到模式空间里去 n"></a>读取下一行到模式空间里去 <code>n</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># false 替换成true</span><br><span class="line">sed &apos;s/false/true/g&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>h: 将当前模式空间的内容保存到保存空间<br>H：将当前模式空间中的内容追加到 保持空间<br>g : 将保持空间复制到模式空间<br>G: 将保持空间附加到模式空间<br>x：用于交换模式空间和保持空间中的内容</p>
+</blockquote>
+<h5 id="跳转-b"><a href="#跳转-b" class="headerlink" title="跳转 b"></a>跳转 <code>b</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 类似goto跳转</span><br><span class="line">sed -n &apos;h;n;H;x;s/\n/, /;/Paulo/!b Print; s/^/- /; :Print;p&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="创建分支-t"><a href="#创建分支-t" class="headerlink" title="创建分支 t"></a>创建分支 <code>t</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 创建分支;只有当前置条件成功的时候，t 命令才会跳转到该标签</span><br><span class="line">sed -n &apos;h;n;H;x; s/\n/, /; :Loop;/Paulo/s/^/-/; /----/!t Loop; p&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="替换字符-amp"><a href="#替换字符-amp" class="headerlink" title="替换字符 &amp;"></a>替换字符 <code>&amp;</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># &amp; 为匹配的字符</span><br><span class="line">sed &apos;s/w/&amp;123&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="大小写转化-u-U-l-L"><a href="#大小写转化-u-U-l-L" class="headerlink" title="大小写转化 \u \U \l \L"></a>大小写转化 <code>\u \U \l \L</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># &amp; 为匹配的字符</span><br><span class="line">sed &apos;s/w/\u&amp;123/&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="字符一对一转化-y"><a href="#字符一对一转化-y" class="headerlink" title="字符一对一转化 y"></a>字符一对一转化 <code>y</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># [address]y/inchars/outchars/ </span><br><span class="line"># inchars中的第一个字符会被转换为outchars中的第一个字符，第二个字符会被转换成outchars中的第二个字符</span><br><span class="line">$ echo &quot;1 5 15 20&quot; | sed &apos;y/151520/IVXVXX/&apos;</span><br></pre></td></tr></table></figure>
+<h5 id="显示隐藏字符命令-l"><a href="#显示隐藏字符命令-l" class="headerlink" title="显示隐藏字符命令 l"></a>显示隐藏字符命令 <code>l</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># [address1[,address2]]l [len] </span><br><span class="line"># 可显示 空格 tab，实现文本按照指定的宽度换行</span><br><span class="line">sed -n &apos;l 25&apos; books.txt</span><br></pre></td></tr></table></figure>
+<h5 id="真正匹配引用-x"><a href="#真正匹配引用-x" class="headerlink" title="真正匹配引用 \x"></a>真正匹配引用 <code>\x</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># () () () ...  \1 \2 \3 ...用\x表示前面的括号内容</span><br><span class="line"># 可显示 空格 tab，实现文本按照指定的宽度换行</span><br><span class="line">sed -r &apos;s/(^[a-z-_]+):x:([0-9]+):([0-9]+).*$/user:\1  uid:\2  gid:\3/&apos; /etc/passwd罗列出用户名 uid gid</span><br></pre></td></tr></table></figure>
+<h5 id="复制指定文件内容到匹配行-r"><a href="#复制指定文件内容到匹配行-r" class="headerlink" title="复制指定文件内容到匹配行 r"></a>复制指定文件内容到匹配行 <code>r</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 读取文件内容显示到指定行</span><br><span class="line">sed -n &apos;1r a.txt&apos; b.txt</span><br></pre></td></tr></table></figure>
+<h5 id="将匹配行写入到文件中-w"><a href="#将匹配行写入到文件中-w" class="headerlink" title="将匹配行写入到文件中 w"></a>将匹配行写入到文件中 <code>w</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 将demo.txt第一行写入到a.txt中</span><br><span class="line">sed -n &apos;1w a.txt&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="执行外部命令-e"><a href="#执行外部命令-e" class="headerlink" title="执行外部命令  e"></a>执行外部命令  <code>e</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># e 执行外部命令 比如 date</span><br><span class="line">sed &apos;3 e date&apos; books.txt</span><br></pre></td></tr></table></figure>
+<h5 id="排除命令"><a href="#排除命令" class="headerlink" title="排除命令  !"></a>排除命令  <code>!</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 匹配Paulo的行不打印</span><br><span class="line">sed -n &apos;/Paulo/!p&apos; books.txt</span><br></pre></td></tr></table></figure>
+<h5 id="输出行号"><a href="#输出行号" class="headerlink" title="输出行号  ="></a>输出行号  <code>=</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># [address1[,address2]]=</span><br><span class="line">sed &apos;=&apos; demo.txt</span><br></pre></td></tr></table></figure>
+<h5 id="退出sed-q"><a href="#退出sed-q" class="headerlink" title="退出sed  q"></a>退出sed  <code>q</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 执行完第10行退出</span><br><span class="line">sed -n &apos;10q&apos; </span><br><span class="line"></span><br><span class="line"># q命令也支持提供一个value(作为程序的返回代码返回)</span><br><span class="line"></span><br><span class="line">sed &apos;/The Alchemist/ q 100&apos; books.txt</span><br><span class="line">echo $?</span><br></pre></td></tr></table></figure>
+<h5 id="多行命令-P-D-N"><a href="#多行命令-P-D-N" class="headerlink" title="多行命令  P,D,N"></a>多行命令  <code>P,D,N</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># N：将数据流中的下一行加进来创建一个多行组来处理,N并不会清除、输出模式空间的内容，而是采用了追加模式</span><br><span class="line">sed -n &apos;10q&apos; </span><br><span class="line"></span><br><span class="line"># D：删除多行组中的一行,只删除模式空间中的第一行。该命令会删除到换行符（含 换行符）为止的所有字符</span><br><span class="line"></span><br><span class="line"># P：打印多行组中的一行</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/mylxsw/growing-up/blob/master/doc/%E4%B8%89%E5%8D%81%E5%88%86%E9%92%9F%E5%AD%A6%E4%BC%9ASED.md" target="_blank" rel="noopener">参考：三十分钟学会SED</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/04/21/UTF-8-without-BOM/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1248,7 +1447,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
