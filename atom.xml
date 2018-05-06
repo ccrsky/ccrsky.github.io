@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2018-05-06T18:03:45.979Z</updated>
+  <updated>2018-05-06T18:04:43.535Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ccrsky.github.io/2018/05/07/%E8%A7%A3%E5%86%B3Ubuntu%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/"/>
     <id>https://ccrsky.github.io/2018/05/07/解决Ubuntu中文乱码/</id>
     <published>2018-05-06T17:52:56.000Z</published>
-    <updated>2018-05-06T18:03:45.979Z</updated>
+    <updated>2018-05-06T18:04:43.535Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,10 @@
     
     </summary>
     
+      <category term="linux" scheme="https://ccrsky.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://ccrsky.github.io/tags/linux/"/>
     
   </entry>
   
