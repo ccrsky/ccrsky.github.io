@@ -2,6 +2,10 @@
 title: 解决Ubuntu中文乱码
 date: 2018-05-07 01:52:56
 tags:
+    - linux
+
+category: 
+    - linux
 ---
 
 最近使用ubuntu系统搭建CI环境，发现不支持中文，中文显示？？？，解决步骤如下：
