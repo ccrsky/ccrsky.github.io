@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2018-05-06T18:04:43.535Z</updated>
+  <updated>2018-08-25T19:39:37.594Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在博客中添加看板娘</title>
+    <link href="https://ccrsky.github.io/2018/08/25/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
+    <id>https://ccrsky.github.io/2018/08/25/如何在博客中添加看板娘/</id>
+    <published>2018-08-25T09:20:43.000Z</published>
+    <updated>2018-08-25T19:39:37.594Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在浏览博客的时候发现不少站点的Live2D看板娘很有意思，搜了下，针对hexo有个&lt;a href=&quot;https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md&quot; target=&quot;_blank&quot;
+      
+    
+    </summary>
+    
+      <category term="js" scheme="https://ccrsky.github.io/categories/js/"/>
+    
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js检测开发者工具Devtools是否打开</title>
+    <link href="https://ccrsky.github.io/2018/08/24/chrome-devtool-open/"/>
+    <id>https://ccrsky.github.io/2018/08/24/chrome-devtool-open/</id>
+    <published>2018-08-24T04:38:49.000Z</published>
+    <updated>2018-08-25T17:53:46.938Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;js检测开发者工具Devtools是否打开&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;lin
+      
+    
+    </summary>
+    
+      <category term="js" scheme="https://ccrsky.github.io/categories/js/"/>
+    
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>解决Ubuntu中文乱码</title>
