@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2018-08-25T19:52:16.944Z</updated>
+  <updated>2018-08-29T08:07:44.263Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ssh常见用法</title>
+    <link href="https://ccrsky.github.io/2018/08/29/ssh%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95/"/>
+    <id>https://ccrsky.github.io/2018/08/29/ssh常见用法/</id>
+    <published>2018-08-29T04:58:07.000Z</published>
+    <updated>2018-08-29T08:07:44.263Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ssh 公钥认证是ssh认证的方式之一,通过公钥认证可实现ssh免密码登陆,使用场景较多,如github代码提交校验，免密登录远程服务器等。&lt;/p&gt;
+&lt;h3 id=&quot;生成公钥和私钥&quot;&gt;&lt;a href=&quot;#生成公钥和私钥&quot; class=&quot;headerlink&quot; title=&quot;
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://ccrsky.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://ccrsky.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在博客中添加看板娘</title>
