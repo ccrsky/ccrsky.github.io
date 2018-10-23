@@ -274,6 +274,158 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2018/10/23/macOS-Mojave字体变细/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ccrsky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avator.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ccrsky">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/23/macOS-Mojave字体变细/" itemprop="url">macOS Mojave字体变细</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-23T22:51:00+08:00">
+                2018-10-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/随记/" itemprop="url" rel="index">
+                    <span itemprop="name">随记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/23/macOS-Mojave字体变细/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/10/23/macOS-Mojave字体变细/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>升级新版 macOS Mojave后字体变细发虚的解决办法：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 解决字体变虚</span></span><br><span class="line">defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 默认为0 ,可设置1,2,3</span></span><br><span class="line">defaults -currentHost write -globalDomain AppleFontSmoothing -int 1</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2018/08/29/ssh常见用法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -379,10 +531,10 @@
           
             <p>ssh 公钥认证是ssh认证的方式之一,通过公钥认证可实现ssh免密码登陆,使用场景较多,如github代码提交校验，免密登录远程服务器等。</p>
 <h3 id="生成公钥和私钥"><a href="#生成公钥和私钥" class="headerlink" title="生成公钥和私钥"></a>生成公钥和私钥</h3><p>默认情况下，~/.ssh目录下会存放当前用户ssh配置认证相关的文件</p>
-<p>使用 ssh-keygen命令生成ssh公钥认证所需的公钥和私钥文件<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 指定加密类型</span><br><span class="line">ssh-keygen -t rsa</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 添加备注信息</span><br><span class="line">ssh-keygen -t rsa  -C "comment"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 指定文件名</span><br><span class="line">ssh-keygen -t rsa  -C "comment" -f "test"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 查看私钥对应的公钥信息</span><br><span class="line">ssh-keygen -y -f private_key</span><br></pre></td></tr></table></figure></p>
+<p>使用 ssh-keygen命令生成ssh公钥认证所需的公钥和私钥文件<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 指定加密类型</span></span><br><span class="line">ssh-keygen -t rsa</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加备注信息</span></span><br><span class="line">ssh-keygen -t rsa  -C "comment"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 指定文件名</span></span><br><span class="line">ssh-keygen -t rsa  -C "comment" -f "test"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看私钥对应的公钥信息</span></span><br><span class="line">ssh-keygen -y -f private_key</span><br></pre></td></tr></table></figure></p>
 <h3 id="免密登录秘钥配置"><a href="#免密登录秘钥配置" class="headerlink" title="免密登录秘钥配置"></a>免密登录秘钥配置</h3><p>将公钥发送至服务器</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 将公钥加至服务器的authorized_keys文件中(确保该文件权限为600)</span><br><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub username@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 或者使用scp命令将文件传到服务器上,在服务器上操作</span><br><span class="line">cat id_rsa.pub &gt;&gt; authorized_keys</span><br></pre></td></tr></table></figure>
-<h3 id="远程登录服务器"><a href="#远程登录服务器" class="headerlink" title="远程登录服务器"></a>远程登录服务器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> SSH 常用连接参数</span><br><span class="line"><span class="meta">#</span>   -i 指定密钥路径  #默认在家路劲的.ssh/下</span><br><span class="line"><span class="meta">#</span>   -p 指定SSH端口</span><br><span class="line"><span class="meta">#</span>   -l 指定用户</span><br><span class="line"><span class="meta">#</span>   -F 指定配置文件</span><br><span class="line"><span class="meta">#</span>   -t 指定为终端迫使SSH客户端以交互模式工作，常配合expect使用</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 登录1.11服务器</span><br><span class="line">ssh root@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 指定ssh端口</span><br><span class="line">ssh -p 8888 root@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 登录远程服务器执行命令并退出(要执行的命令放在ssh命令后边)</span><br><span class="line">ssh root@192.168.1.11 ls -hl</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 开启调试模式</span><br><span class="line">ssh -v root@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 使用指定秘钥登录服务器</span><br><span class="line">ssh -i ~/.ssh/id_rsa_11  root@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> SSH构建跳板隧道(本机无登录0.10权限，但1.10有权限，通过1.10登录0.10服务器)</span><br><span class="line">ssh –t 192.168.1.10 ssh 10.0.0.10</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 绑定ip 如果你的SSH客户端有多于两个以上的IP地址，你就不可能分得清楚到底是哪一个IP地址连接到了SSH服务。</span><br><span class="line">ssh –b 192.168.1.10 root@10.0.0.10</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> ssh远程端口映射，将外网端口映射到本地</span><br><span class="line">ssh -R 8080:127.0.0.1:8080 username@12.34.56.78</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将公钥加至服务器的authorized_keys文件中(确保该文件权限为600)</span></span><br><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub username@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 或者使用scp命令将文件传到服务器上,在服务器上操作</span></span><br><span class="line">cat id_rsa.pub &gt;&gt; authorized_keys</span><br></pre></td></tr></table></figure>
+<h3 id="远程登录服务器"><a href="#远程登录服务器" class="headerlink" title="远程登录服务器"></a>远程登录服务器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> SSH 常用连接参数</span></span><br><span class="line"><span class="meta">#</span><span class="bash">   -i 指定密钥路径  <span class="comment">#默认在家路劲的.ssh/下</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">   -p 指定SSH端口</span></span><br><span class="line"><span class="meta">#</span><span class="bash">   -l 指定用户</span></span><br><span class="line"><span class="meta">#</span><span class="bash">   -F 指定配置文件</span></span><br><span class="line"><span class="meta">#</span><span class="bash">   -t 指定为终端迫使SSH客户端以交互模式工作，常配合expect使用</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 登录1.11服务器</span></span><br><span class="line">ssh root@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 指定ssh端口</span></span><br><span class="line">ssh -p 8888 root@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 登录远程服务器执行命令并退出(要执行的命令放在ssh命令后边)</span></span><br><span class="line">ssh root@192.168.1.11 ls -hl</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 开启调试模式</span></span><br><span class="line">ssh -v root@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用指定秘钥登录服务器</span></span><br><span class="line">ssh -i ~/.ssh/id_rsa_11  root@192.168.1.11</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> SSH构建跳板隧道(本机无登录0.10权限，但1.10有权限，通过1.10登录0.10服务器)</span></span><br><span class="line">ssh –t 192.168.1.10 ssh 10.0.0.10</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 绑定ip 如果你的SSH客户端有多于两个以上的IP地址，你就不可能分得清楚到底是哪一个IP地址连接到了SSH服务。</span></span><br><span class="line">ssh –b 192.168.1.10 root@10.0.0.10</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> ssh远程端口映射，将外网端口映射到本地</span></span><br><span class="line">ssh -R 8080:127.0.0.1:8080 username@12.34.56.78</span><br></pre></td></tr></table></figure>
 <h3 id="ssh-登录方式"><a href="#ssh-登录方式" class="headerlink" title="ssh 登录方式"></a>ssh 登录方式</h3><h4 id="账号密码登录"><a href="#账号密码登录" class="headerlink" title="账号密码登录"></a>账号密码登录</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">+-----------+   1.send ssh request     +-----------+</span><br><span class="line">|           |                          |           |</span><br><span class="line">|           +------------------------&gt; |           |</span><br><span class="line">|           |                          |           |</span><br><span class="line">|           |   2.send public key      |           |</span><br><span class="line">|           |                          |           |</span><br><span class="line">|  client   | &lt;------------------------+  server   |</span><br><span class="line">|           |                          |           |</span><br><span class="line">|           |   3.encode send data     |           |</span><br><span class="line">|           |                          |           |</span><br><span class="line">|           +------------------------&gt; |           |</span><br><span class="line">|           |                          |           |</span><br><span class="line">+-----------+                          +-----------+</span><br></pre></td></tr></table></figure>
 <ol>
 <li>当客户端发起ssh请求，服务器会把自己的公钥发送给用户；</li>
@@ -1924,176 +2076,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/09/11/RN-修改包服务器端口/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ccrsky">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avator.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ccrsky">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/11/RN-修改包服务器端口/" itemprop="url">[RN]修改包服务器端口</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-11T00:38:23+08:00">
-                2017-09-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/react-native/" itemprop="url" rel="index">
-                    <span itemprop="name">react native</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/09/11/RN-修改包服务器端口/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/09/11/RN-修改包服务器端口/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>开发React Native时，启动包服务器的默认端口是<code>8081</code>，如果跟现有服务器端口冲突的话，可以修改成想要的端口，修改内容如下：</p>
-<h3 id="修改包服务器端口号"><a href="#修改包服务器端口号" class="headerlink" title="修改包服务器端口号"></a>修改包服务器端口号</h3><p>包服务器启动监听端口，在项目的<code>node_modules/react-native/local-cli/server/server.js中</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">options: [&#123;</span><br><span class="line">    command: <span class="string">'--port [number]'</span>,</span><br><span class="line">    <span class="keyword">default</span>: <span class="number">8081</span>,</span><br><span class="line">    parse: <span class="function">(<span class="params">val</span>) =&gt;</span> <span class="built_in">Number</span>(val),</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line">  ]</span><br></pre></td></tr></table></figure>
-<p>由此可见我可以在运行时<code>react-native start --port=8082</code>动态指定端口</p>
-<h3 id="修改应用程序启动时，读取逻辑代码的的地址"><a href="#修改应用程序启动时，读取逻辑代码的的地址" class="headerlink" title="修改应用程序启动时，读取逻辑代码的的地址"></a>修改应用程序启动时，读取逻辑代码的的地址</h3><p>在<code>ios/Demo01/AppDelegate.m</code>中找到下面代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 修改后代码</span><br><span class="line">  jsCodeLocation = [NSURL URLWithString:@&quot;http://localhost:8081/index.ios.bundle&quot;];</span><br><span class="line">// jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@&quot;index.ios&quot; fallbackResource:nil];</span><br></pre></td></tr></table></figure>
-<h3 id="修改websocket监听端口"><a href="#修改websocket监听端口" class="headerlink" title="修改websocket监听端口"></a>修改websocket监听端口</h3><p>在项目的<code>node_modules/react-native/Libraries/WebSocket/RCTWebSocketExecutor</code>中修改下端口。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- (void)setUp</span><br><span class="line">&#123;</span><br><span class="line">  if (!_url) &#123;</span><br><span class="line">    NSInteger port = [[[_bridge bundleURL] port] integerValue] ?: 8081;</span><br><span class="line">    NSString *host = [[_bridge bundleURL] host] ?: @&quot;localhost&quot;;</span><br><span class="line">    NSString *URLString = [NSString stringWithFormat:@&quot;http://%@:%zd/debugger-proxy?role=client&quot;, host, port];</span><br><span class="line">    _url = [RCTConvert NSURL:URLString];</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2148,7 +2130,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2159,7 +2141,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2170,7 +2152,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

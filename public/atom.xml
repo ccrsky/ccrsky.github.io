@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2018-08-29T08:07:44.263Z</updated>
+  <updated>2018-10-23T14:54:01.168Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>macOS Mojave字体变细</title>
+    <link href="https://ccrsky.github.io/2018/10/23/macOS-Mojave%E5%AD%97%E4%BD%93%E5%8F%98%E7%BB%86/"/>
+    <id>https://ccrsky.github.io/2018/10/23/macOS-Mojave字体变细/</id>
+    <published>2018-10-23T14:51:00.000Z</published>
+    <updated>2018-10-23T14:54:01.168Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;升级新版 macOS Mojave后字体变细发虚的解决办法：&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+      
+    
+    </summary>
+    
+      <category term="随记" scheme="https://ccrsky.github.io/categories/%E9%9A%8F%E8%AE%B0/"/>
+    
+    
+      <category term="mac" scheme="https://ccrsky.github.io/tags/mac/"/>
+    
+      <category term="os" scheme="https://ccrsky.github.io/tags/os/"/>
+    
+  </entry>
   
   <entry>
     <title>ssh常见用法</title>
