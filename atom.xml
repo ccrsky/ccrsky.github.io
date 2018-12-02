@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2018-10-23T14:54:01.168Z</updated>
+  <updated>2018-12-02T05:59:16.063Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>移动端滚动穿透</title>
+    <link href="https://ccrsky.github.io/2018/12/02/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F/"/>
+    <id>https://ccrsky.github.io/2018/12/02/移动端滚动穿透/</id>
+    <published>2018-12-02T05:43:28.000Z</published>
+    <updated>2018-12-02T05:59:16.063Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h3&gt;&lt;p&gt;滚动穿透问题：移动端当有fixed 遮罩背景和弹出层时，在屏幕上滑动能够滑动背景下面的内容。&lt;/p&gt;
+&lt;h3 id=&quot;解决方案&quot;&gt;&lt;a hr
+      
+    
+    </summary>
+    
+      <category term="js" scheme="https://ccrsky.github.io/categories/js/"/>
+    
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+      <category term="移动端" scheme="https://ccrsky.github.io/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>macOS Mojave字体变细</title>
@@ -484,29 +510,6 @@
       <category term="python" scheme="https://ccrsky.github.io/tags/python/"/>
     
       <category term="运维" scheme="https://ccrsky.github.io/tags/%E8%BF%90%E7%BB%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript对象</title>
-    <link href="https://ccrsky.github.io/2016/02/11/javascript%E5%AF%B9%E8%B1%A1/"/>
-    <id>https://ccrsky.github.io/2016/02/11/javascript对象/</id>
-    <published>2016-02-11T10:44:09.000Z</published>
-    <updated>2018-03-18T17:51:18.455Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;创建对象&quot;&gt;&lt;a href=&quot;#创建对象&quot; class=&quot;headerlink&quot; title=&quot;创建对象&quot;&gt;&lt;/a&gt;创建对象&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;
-      
-    
-    </summary>
-    
-      <category term="js" scheme="https://ccrsky.github.io/categories/js/"/>
-    
-    
-      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
     
   </entry>
   
