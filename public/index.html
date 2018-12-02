@@ -274,6 +274,168 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2018/12/02/移动端滚动穿透/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ccrsky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avator.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ccrsky">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/02/移动端滚动穿透/" itemprop="url">移动端滚动穿透</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T13:43:28+08:00">
+                2018-12-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/02/移动端滚动穿透/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/12/02/移动端滚动穿透/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>滚动穿透问题：移动端当有fixed 遮罩背景和弹出层时，在屏幕上滑动能够滑动背景下面的内容。</p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><h4 id="一-设置body-html样式overflow-hidden"><a href="#一-设置body-html样式overflow-hidden" class="headerlink" title="一 设置body,html样式overflow  hidden"></a>一 设置body,html样式overflow  hidden</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>禁用 html 和 body 的滚动条,有时还需设置html同样样式控制页面滚动，此方案使用绝大部分PC使用场景(长页面弹窗时需要记录滚动位置，窗口关闭还原到原来位置)，但移动端效果无效。</p>
+<h4 id="二-modal设置touchmove事件preventDefault"><a href="#二-modal设置touchmove事件preventDefault" class="headerlink" title="二 modal设置touchmove事件preventDefault"></a>二 modal设置touchmove事件preventDefault</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">modal.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  e.preventDefault();</span><br><span class="line">&#125;, &#123;</span><br><span class="line">  passive:<span class="literal">false</span>, <span class="comment">// 是否永远不会调用 preventDefault()</span></span><br><span class="line">  capture:<span class="literal">true</span>, <span class="comment">// 是否捕获冒泡</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>此方案可阻止页面滚动，但弹窗如果有滚动内容，就会被阻止，无法滚动。</p>
+<h4 id="三-设置body样式position-fixed"><a href="#三-设置body样式position-fixed" class="headerlink" title="三 设置body样式position: fixed"></a>三 设置body样式position: fixed</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span><span class="selector-class">.noscroll</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>js控制body样式，弹窗设置position:fixed，关闭弹窗还原</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> bodyEl = <span class="built_in">document</span>.body;</span><br><span class="line"><span class="keyword">let</span> scrollTop = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">if</span> (showModal) &#123;</span><br><span class="line">  scrollTop = <span class="built_in">window</span>.scrollY || <span class="number">0</span>; <span class="comment">// 记录滚动位置</span></span><br><span class="line">  bodyEl.style.position = <span class="string">'fixed'</span>;</span><br><span class="line">  bodyEl.style.top = -scrollTop + <span class="string">'px'</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  bodyEl.style.position = <span class="string">''</span>;</span><br><span class="line">  bodyEl.style.top = <span class="string">''</span>;</span><br><span class="line">  <span class="built_in">window</span>.scrollTo(<span class="number">0</span>, scrollTop); <span class="comment">// 回到原先的top</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>此方案完美解决滚动穿透问题，推荐使用此方案。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2018/10/23/macOS-Mojave字体变细/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1902,185 +2064,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ccrsky.github.io/2017/09/11/RN-真机调试及内部发布/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ccrsky">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avator.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ccrsky">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/11/RN-真机调试及内部发布/" itemprop="url">[RN]真机调试及内部发布</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-11T01:15:47+08:00">
-                2017-09-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/react-native/" itemprop="url" rel="index">
-                    <span itemprop="name">react native</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/09/11/RN-真机调试及内部发布/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/09/11/RN-真机调试及内部发布/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>一般我们开发RN都是在模拟器上调试的，那么真机是如何调试的呢？</p>
-<h3 id="真机调试"><a href="#真机调试" class="headerlink" title="真机调试"></a>真机调试</h3><ol>
-<li>配置好签名证书，并将包环境设置成Debug模式</li>
-<li>将<code>AppDelegate.m</code>中的localhost修改成对应的IP地址，将调试真机插在电脑上，Xcode模拟器选择真机。</li>
-<li>运行编译命令，真机摇一摇手机即可调出调试面板</li>
-</ol>
-<h3 id="内部发布"><a href="#内部发布" class="headerlink" title="内部发布"></a>内部发布</h3><p>内部发布是上App Store之前的一步，开发完RN项目后可供内部人员安装和使用</p>
-<ol>
-<li>修改<code>AppDelegate.m</code>中jsCodeLocation为 <code>jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@&quot;index.ios&quot; fallbackResource:nil];</code></li>
-<li>在项目下运行 <code>curl http://localhost:8081/index.ios.bundle -o main.jsbundle</code><br>或者运行<code>react-native bundle</code></li>
-</ol>
-<p>此时就是在项目目录下生成<code>main.jsbundle</code>文件，这个文件将所有js文件都打包在一起了，然后配置好证书，再编译得到ipa离线包，安装后即可在真机跑起来了。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -2130,7 +2118,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2152,7 +2140,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
