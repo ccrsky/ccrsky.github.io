@@ -84,7 +84,7 @@
 <meta name="description" content="聚沙成塔，集腋成裘">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ccrsky">
-<meta property="og:url" content="https://ccrsky.github.io/archives/2018/index.html">
+<meta property="og:url" content="https://ccrsky.github.io/archives/2018/12/index.html">
 <meta property="og:site_name" content="ccrsky">
 <meta property="og:description" content="聚沙成塔，集腋成裘">
 <meta property="og:locale" content="zh-Hans">
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="https://ccrsky.github.io/archives/2018/"/>
+  <link rel="canonical" href="https://ccrsky.github.io/archives/2018/12/"/>
 
 
 
@@ -272,11 +272,7 @@
         
           
         
-<<<<<<< HEAD
-        嗯..! 目前共计 22 篇日志。 继续努力。
-=======
         嗯..! 目前共计 21 篇日志。 继续努力。
->>>>>>> 5d0b084cac644e07c3b9c3c11dd5343f57950bab
       </span>
 
       
@@ -313,339 +309,6 @@
               datetime="2018-12-02T13:43:28+08:00"
               content="2018-12-02" >
           12-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/10/23/macOS-Mojave字体变细/" itemprop="url">
-              
-                <span itemprop="name">macOS Mojave字体变细</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-23T22:51:00+08:00"
-              content="2018-10-23" >
-          10-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/29/ssh常见用法/" itemprop="url">
-              
-                <span itemprop="name">ssh常见用法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-29T12:58:07+08:00"
-              content="2018-08-29" >
-          08-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/25/如何在博客中添加看板娘/" itemprop="url">
-              
-                <span itemprop="name">如何在博客中添加看板娘</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-25T17:20:43+08:00"
-              content="2018-08-25" >
-          08-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/24/chrome-devtool-open/" itemprop="url">
-              
-                <span itemprop="name">js检测开发者工具Devtools是否打开</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-24T12:38:49+08:00"
-              content="2018-08-24" >
-          08-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/05/07/解决Ubuntu中文乱码/" itemprop="url">
-              
-                <span itemprop="name">解决Ubuntu中文乱码</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-07T01:52:56+08:00"
-              content="2018-05-07" >
-          05-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/19/koa实战/" itemprop="url">
-              
-                <span itemprop="name">koa实战</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-19T19:24:36+08:00"
-              content="2018-04-19" >
-          04-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/19/pm2快速入门/" itemprop="url">
-              
-                <span itemprop="name">pm2快速入门</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-19T01:14:47+08:00"
-              content="2018-03-19" >
-          03-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/19/mysql之修改sql-mode/" itemprop="url">
-              
-                <span itemprop="name">mysql之修改sql_mode</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-19T01:14:29+08:00"
-              content="2018-03-19" >
-          03-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/19/mysql配置/" itemprop="url">
-              
-                <span itemprop="name">mysql配置</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-19T01:14:03+08:00"
-              content="2018-03-19" >
-          03-19
         </time>
       </div>
 
@@ -711,11 +374,7 @@
               
                 <a href="/archives/">
               
-<<<<<<< HEAD
-                  <span class="site-state-item-count">22</span>
-=======
                   <span class="site-state-item-count">21</span>
->>>>>>> 5d0b084cac644e07c3b9c3c11dd5343f57950bab
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -803,7 +462,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
