@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2018-12-02T05:59:16.063Z</updated>
+  <updated>2019-03-06T11:25:12.000Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Node服务端代码编译</title>
+    <link href="https://ccrsky.github.io/2019/03/06/Node%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/"/>
+    <id>https://ccrsky.github.io/2019/03/06/Node服务端代码编译/</id>
+    <published>2019-03-06T11:08:37.000Z</published>
+    <updated>2019-03-06T11:25:12.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用 webpack 打包 node 服务端项目&lt;/p&gt;
+&lt;h3 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h3&gt;&lt;p&gt;通常我们开发 node web 项目时也期望类似 java web(线上只需
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://ccrsky.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://ccrsky.github.io/tags/python/"/>
+    
+      <category term="运维" scheme="https://ccrsky.github.io/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>移动端滚动穿透</title>
     <link href="https://ccrsky.github.io/2018/12/02/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F/"/>
     <id>https://ccrsky.github.io/2018/12/02/移动端滚动穿透/</id>
     <published>2018-12-02T05:43:28.000Z</published>
-    <updated>2018-12-02T05:59:16.063Z</updated>
+    <updated>2019-02-13T04:20:08.988Z</updated>
     
     <summary type="html">
     
@@ -47,7 +73,7 @@
     <link href="https://ccrsky.github.io/2018/10/23/macOS-Mojave%E5%AD%97%E4%BD%93%E5%8F%98%E7%BB%86/"/>
     <id>https://ccrsky.github.io/2018/10/23/macOS-Mojave字体变细/</id>
     <published>2018-10-23T14:51:00.000Z</published>
-    <updated>2018-10-23T14:54:01.168Z</updated>
+    <updated>2019-02-13T04:20:08.986Z</updated>
     
     <summary type="html">
     
@@ -72,7 +98,7 @@
     <link href="https://ccrsky.github.io/2018/08/29/ssh%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95/"/>
     <id>https://ccrsky.github.io/2018/08/29/ssh常见用法/</id>
     <published>2018-08-29T04:58:07.000Z</published>
-    <updated>2018-08-29T08:07:44.263Z</updated>
+    <updated>2019-02-13T04:20:08.988Z</updated>
     
     <summary type="html">
     
@@ -96,7 +122,7 @@
     <link href="https://ccrsky.github.io/2018/08/25/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
     <id>https://ccrsky.github.io/2018/08/25/如何在博客中添加看板娘/</id>
     <published>2018-08-25T09:20:43.000Z</published>
-    <updated>2018-08-25T19:52:16.944Z</updated>
+    <updated>2019-02-13T04:20:08.988Z</updated>
     
     <summary type="html">
     
@@ -119,7 +145,7 @@
     <link href="https://ccrsky.github.io/2018/08/24/chrome-devtool-open/"/>
     <id>https://ccrsky.github.io/2018/08/24/chrome-devtool-open/</id>
     <published>2018-08-24T04:38:49.000Z</published>
-    <updated>2018-08-25T17:53:46.938Z</updated>
+    <updated>2019-02-13T04:20:08.981Z</updated>
     
     <summary type="html">
     
@@ -143,7 +169,7 @@
     <link href="https://ccrsky.github.io/2018/05/07/%E8%A7%A3%E5%86%B3Ubuntu%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/"/>
     <id>https://ccrsky.github.io/2018/05/07/解决Ubuntu中文乱码/</id>
     <published>2018-05-06T17:52:56.000Z</published>
-    <updated>2018-05-06T18:04:43.535Z</updated>
+    <updated>2019-02-13T04:20:08.988Z</updated>
     
     <summary type="html">
     
@@ -169,7 +195,7 @@
     <link href="https://ccrsky.github.io/2018/04/19/koa%E5%AE%9E%E6%88%98/"/>
     <id>https://ccrsky.github.io/2018/04/19/koa实战/</id>
     <published>2018-04-19T11:24:36.000Z</published>
-    <updated>2018-05-02T12:59:49.981Z</updated>
+    <updated>2019-02-13T04:20:08.985Z</updated>
     
     <summary type="html">
     
@@ -194,7 +220,7 @@
     <link href="https://ccrsky.github.io/2018/03/19/pm2%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     <id>https://ccrsky.github.io/2018/03/19/pm2快速入门/</id>
     <published>2018-03-18T17:14:47.000Z</published>
-    <updated>2018-03-18T18:15:19.277Z</updated>
+    <updated>2019-02-13T04:20:08.987Z</updated>
     
     <summary type="html">
     
@@ -219,7 +245,7 @@
     <link href="https://ccrsky.github.io/2018/03/19/mysql%E4%B9%8B%E4%BF%AE%E6%94%B9sql-mode/"/>
     <id>https://ccrsky.github.io/2018/03/19/mysql之修改sql-mode/</id>
     <published>2018-03-18T17:14:29.000Z</published>
-    <updated>2018-03-18T17:51:18.456Z</updated>
+    <updated>2019-02-13T04:20:08.986Z</updated>
     
     <summary type="html">
     
@@ -244,7 +270,7 @@
     <link href="https://ccrsky.github.io/2018/03/19/mysql%E9%85%8D%E7%BD%AE/"/>
     <id>https://ccrsky.github.io/2018/03/19/mysql配置/</id>
     <published>2018-03-18T17:14:03.000Z</published>
-    <updated>2018-03-18T17:51:18.457Z</updated>
+    <updated>2019-02-13T04:20:08.987Z</updated>
     
     <summary type="html">
     
@@ -269,7 +295,7 @@
     <link href="https://ccrsky.github.io/2017/09/11/RN-%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%8F%8A%E5%86%85%E9%83%A8%E5%8F%91%E5%B8%83/"/>
     <id>https://ccrsky.github.io/2017/09/11/RN-真机调试及内部发布/</id>
     <published>2017-09-10T17:15:47.000Z</published>
-    <updated>2018-03-18T17:51:18.451Z</updated>
+    <updated>2019-02-13T04:20:08.981Z</updated>
     
     <summary type="html">
     
@@ -298,7 +324,7 @@
     <link href="https://ccrsky.github.io/2017/09/11/RN-%E4%BF%AE%E6%94%B9%E5%8C%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E5%8F%A3/"/>
     <id>https://ccrsky.github.io/2017/09/11/RN-修改包服务器端口/</id>
     <published>2017-09-10T16:38:23.000Z</published>
-    <updated>2018-03-18T17:51:18.451Z</updated>
+    <updated>2019-02-13T04:20:08.980Z</updated>
     
     <summary type="html">
     
@@ -326,7 +352,7 @@
     <link href="https://ccrsky.github.io/2017/08/17/next/"/>
     <id>https://ccrsky.github.io/2017/08/17/next/</id>
     <published>2017-08-17T12:16:53.000Z</published>
-    <updated>2018-03-18T17:51:18.457Z</updated>
+    <updated>2019-02-13T04:20:08.987Z</updated>
     
     <summary type="html">
     
@@ -350,7 +376,7 @@
     <link href="https://ccrsky.github.io/2017/08/15/Hexo%E6%8F%92%E5%85%A5%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90/"/>
     <id>https://ccrsky.github.io/2017/08/15/Hexo插入媒体资源/</id>
     <published>2017-08-14T16:59:44.000Z</published>
-    <updated>2018-03-18T17:51:18.451Z</updated>
+    <updated>2019-02-13T04:20:08.980Z</updated>
     
     <summary type="html">
     
@@ -372,7 +398,7 @@
     <link href="https://ccrsky.github.io/2017/08/15/Handlebars%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8/"/>
     <id>https://ccrsky.github.io/2017/08/15/Handlebars模板使用/</id>
     <published>2017-08-14T16:09:36.000Z</published>
-    <updated>2018-03-18T17:51:18.451Z</updated>
+    <updated>2019-02-13T04:20:08.980Z</updated>
     
     <summary type="html">
     
@@ -396,7 +422,7 @@
     <link href="https://ccrsky.github.io/2017/04/26/sed%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
     <id>https://ccrsky.github.io/2017/04/26/sed常用操作命令/</id>
     <published>2017-04-26T12:46:08.000Z</published>
-    <updated>2018-03-18T17:51:18.458Z</updated>
+    <updated>2019-02-13T04:20:08.988Z</updated>
     
     <summary type="html">
     
@@ -420,7 +446,7 @@
     <link href="https://ccrsky.github.io/2017/04/21/UTF-8-without-BOM/"/>
     <id>https://ccrsky.github.io/2017/04/21/UTF-8-without-BOM/</id>
     <published>2017-04-21T03:49:42.000Z</published>
-    <updated>2018-03-18T17:51:18.452Z</updated>
+    <updated>2019-02-13T04:20:08.981Z</updated>
     
     <summary type="html">
     
@@ -445,7 +471,7 @@
     <link href="https://ccrsky.github.io/2017/04/17/linux%E8%BF%9B%E7%A8%8B%E8%B5%84%E6%BA%90%E4%BF%A1%E6%81%AF/"/>
     <id>https://ccrsky.github.io/2017/04/17/linux进程资源信息/</id>
     <published>2017-04-16T17:24:36.000Z</published>
-    <updated>2018-03-18T17:51:18.456Z</updated>
+    <updated>2019-02-13T04:20:08.986Z</updated>
     
     <summary type="html">
     
@@ -468,7 +494,7 @@
     <link href="https://ccrsky.github.io/2017/03/21/tmux%E4%BD%BF%E7%94%A8/"/>
     <id>https://ccrsky.github.io/2017/03/21/tmux使用/</id>
     <published>2017-03-21T04:34:33.000Z</published>
-    <updated>2018-03-18T17:51:18.458Z</updated>
+    <updated>2019-02-13T04:20:08.988Z</updated>
     
     <summary type="html">
     
@@ -483,33 +509,6 @@
     
     
       <category term="工具" scheme="https://ccrsky.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>fabric快速入门</title>
-    <link href="https://ccrsky.github.io/2016/02/14/fabric%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
-    <id>https://ccrsky.github.io/2016/02/14/fabric快速入门/</id>
-    <published>2016-02-14T05:07:01.000Z</published>
-    <updated>2018-03-18T17:51:18.452Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Fabric是一个Python库，用于简化使用SSH的应用程序部署或系统管理任务。&lt;/p&gt;
-&lt;p&gt;它提供的操作包括：执行本地或远程shell命令，上传/下载文件，以及其他辅助功能等。&lt;/p&gt;
-&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerli
-      
-    
-    </summary>
-    
-      <category term="python" scheme="https://ccrsky.github.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://ccrsky.github.io/tags/python/"/>
-    
-      <category term="运维" scheme="https://ccrsky.github.io/tags/%E8%BF%90%E7%BB%B4/"/>
     
   </entry>
   
