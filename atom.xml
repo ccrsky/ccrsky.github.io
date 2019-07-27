@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2019-07-27T02:14:17.149Z</updated>
+  <updated>2019-07-27T02:16:56.713Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -21,15 +21,13 @@
     <link href="https://ccrsky.github.io/2019/07/27/css%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/"/>
     <id>https://ccrsky.github.io/2019/07/27/css代码片段/</id>
     <published>2019-07-27T02:06:54.000Z</published>
-    <updated>2019-07-27T02:14:17.149Z</updated>
+    <updated>2019-07-27T02:16:56.713Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;####&lt;/p&gt;
-&lt;p&gt;单行文本，超出显示省略号&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=
+        &lt;h4 id=&quot;单行文本，超出显示省略号&quot;&gt;&lt;a href=&quot;#单行文本，超出显示省略号&quot; class=&quot;headerlink&quot; title=&quot;单行文本，超出显示省略号&quot;&gt;&lt;/a&gt;单行文本，超出显示省略号&lt;/h4&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;ta
       
     
     </summary>
