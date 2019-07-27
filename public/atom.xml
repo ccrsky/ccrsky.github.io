@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2019-04-02T04:20:27.911Z</updated>
+  <updated>2019-07-27T02:14:17.149Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css代码片段</title>
+    <link href="https://ccrsky.github.io/2019/07/27/css%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/"/>
+    <id>https://ccrsky.github.io/2019/07/27/css代码片段/</id>
+    <published>2019-07-27T02:06:54.000Z</published>
+    <updated>2019-07-27T02:14:17.149Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;####&lt;/p&gt;
+&lt;p&gt;单行文本，超出显示省略号&lt;/p&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+      <category term="css" scheme="https://ccrsky.github.io/categories/css/"/>
+    
+    
+      <category term="css" scheme="https://ccrsky.github.io/tags/css/"/>
+    
+      <category term="前端" scheme="https://ccrsky.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css实现环形进度条</title>
+    <link href="https://ccrsky.github.io/2019/07/27/css%E5%AE%9E%E7%8E%B0%E7%8E%AF%E5%BD%A2%E8%BF%9B%E5%BA%A6%E6%9D%A1/"/>
+    <id>https://ccrsky.github.io/2019/07/27/css实现环形进度条/</id>
+    <published>2019-07-27T01:40:07.000Z</published>
+    <updated>2019-07-27T02:06:04.745Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot; class=&quot;headerlink&quot; title=&quot;原理&quot;&gt;&lt;/a&gt;原理&lt;/h4&gt;&lt;p&gt;需要一个圆，和两个半圆(左右，挡住底色)，通过旋转左右半圆漏出底色,再在顶层加一个原型覆盖层就可以实现环形，具体细节可参考&lt;a href=&quot;
+      
+    
+    </summary>
+    
+      <category term="css" scheme="https://ccrsky.github.io/categories/css/"/>
+    
+    
+      <category term="css" scheme="https://ccrsky.github.io/tags/css/"/>
+    
+      <category term="前端" scheme="https://ccrsky.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>密码强度校验</title>
@@ -454,54 +506,6 @@
       
         &lt;h4 id=&quot;SED命令&quot;&gt;&lt;a href=&quot;#SED命令&quot; class=&quot;headerlink&quot; title=&quot;SED命令&quot;&gt;&lt;/a&gt;SED命令&lt;/h4&gt;&lt;p&gt;SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。&lt;/p&gt;
 &lt;h4 id=&quot;原理
-      
-    
-    </summary>
-    
-      <category term="linux" scheme="https://ccrsky.github.io/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://ccrsky.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UTF-8 without BOM</title>
-    <link href="https://ccrsky.github.io/2017/04/21/UTF-8-without-BOM/"/>
-    <id>https://ccrsky.github.io/2017/04/21/UTF-8-without-BOM/</id>
-    <published>2017-04-21T03:49:42.000Z</published>
-    <updated>2019-03-06T11:40:21.051Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天遇到一个文件编码问题(非法字符&lt;code&gt;\ufeff&lt;/code&gt;)，导致代码异常；经过排查发现：文件编码是 UTF-8 + BOM，表现形式如下：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutte
-      
-    
-    </summary>
-    
-      <category term="常见问题" scheme="https://ccrsky.github.io/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
-    
-    
-      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
-    
-      <category term="常见问题" scheme="https://ccrsky.github.io/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux进程资源信息</title>
-    <link href="https://ccrsky.github.io/2017/04/17/linux%E8%BF%9B%E7%A8%8B%E8%B5%84%E6%BA%90%E4%BF%A1%E6%81%AF/"/>
-    <id>https://ccrsky.github.io/2017/04/17/linux进程资源信息/</id>
-    <published>2017-04-16T17:24:36.000Z</published>
-    <updated>2019-03-06T11:40:21.055Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Linux进程与资源管理&quot;&gt;&lt;a href=&quot;#Linux进程与资源管理&quot; class=&quot;headerlink&quot; title=&quot;Linux进程与资源管理&quot;&gt;&lt;/a&gt;Linux进程与资源管理&lt;/h2&gt;&lt;p&gt;Linux最棒的地方在于它的多用户多任务环境，记录下多用户多
       
     
     </summary>
