@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ccrsky.github.io/"/>
-  <updated>2019-07-27T02:16:56.713Z</updated>
+  <updated>2020-01-03T02:04:47.286Z</updated>
   <id>https://ccrsky.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react开发遇到的一些坑</title>
+    <link href="https://ccrsky.github.io/2020/01/03/react%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"/>
+    <id>https://ccrsky.github.io/2020/01/03/react开发遇到的一些坑/</id>
+    <published>2020-01-03T02:00:17.000Z</published>
+    <updated>2020-01-03T02:04:47.286Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;一行文本，超出显示省略号&quot;&gt;&lt;a href=&quot;#一行文本，超出显示省略号&quot; class=&quot;headerlink&quot; title=&quot;一行文本，超出显示省略号&quot;&gt;&lt;/a&gt;一行文本，超出显示省略号&lt;/h4&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;ta
+      
+    
+    </summary>
+    
+      <category term="js" scheme="https://ccrsky.github.io/categories/js/"/>
+    
+    
+      <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>css代码片段</title>
@@ -488,30 +511,6 @@
     
     
       <category term="js" scheme="https://ccrsky.github.io/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sed常用操作命令</title>
-    <link href="https://ccrsky.github.io/2017/04/26/sed%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
-    <id>https://ccrsky.github.io/2017/04/26/sed常用操作命令/</id>
-    <published>2017-04-26T12:46:08.000Z</published>
-    <updated>2019-03-06T11:40:21.056Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;SED命令&quot;&gt;&lt;a href=&quot;#SED命令&quot; class=&quot;headerlink&quot; title=&quot;SED命令&quot;&gt;&lt;/a&gt;SED命令&lt;/h4&gt;&lt;p&gt;SED的英文全称是 Stream EDitor，它是一个简单而强大的文本解析转换工具。&lt;/p&gt;
-&lt;h4 id=&quot;原理
-      
-    
-    </summary>
-    
-      <category term="linux" scheme="https://ccrsky.github.io/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://ccrsky.github.io/tags/linux/"/>
     
   </entry>
   
